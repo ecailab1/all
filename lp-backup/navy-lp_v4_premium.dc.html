@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>NAVY EC総合支援 LP v4</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Shippori+Mincho:wght@600;700;800&amp;family=Inter:wght@700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a{color:#003C92}a:hover{color:#00286B}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+.chev{transition:transform .2s;transform:rotate(180deg)}details:not([open]) .chev{transform:none}
+.nb{display:inline-block;max-width:100%}
+h1,h2,h3{font-family:'Shippori Mincho','Noto Serif JP',serif;font-weight:800 !important;letter-spacing:0.04em}
+.g{background:linear-gradient(180deg,#2A56A8 0%,#0A1B3D 90%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.gl{background:linear-gradient(180deg,#FFFFFF 20%,#D5DEEE 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.gy{background:linear-gradient(180deg,#F3E4B5 5%,#C6A45C 85%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.u,.m{background:linear-gradient(transparent 90%,#C6A45C 90%,#C6A45C 96%,transparent 96%);padding-bottom:0.12em}
+.md{background:linear-gradient(transparent 90%,#C6A45C 90%,#C6A45C 96%,transparent 96%);padding-bottom:0.12em}
+.ph{background:linear-gradient(135deg,#1B2B4F 0%,#0A1B3D 100%);color:#C5D2EA;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;font-size:12px;letter-spacing:0.12em}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans JP', system-ui, sans-serif; color: #0A1B3D; background: #FFFFFF; line-height: 1.75; line-break: strict; word-break: auto-phrase; overflow-wrap: anywhere">
+
+<!-- Header -->
+<header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 1px solid #D9E2F2">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 8px 12px; display: flex; align-items: center; justify-content: space-between; gap: 8px">
+    <img src="/_blob/8204050c54d3e1a4293b1b7643afaf46" alt="Navy Group" style="height: 36px; width: auto; display: block; flex: none">
+    <nav aria-label="主要メニュー" style="display: flex; gap: 8px; flex: none">
+      <a href="#price" style="white-space: nowrap; border: 2px solid #003C92; color: #003C92; background: #FFFFFF; text-decoration: none; padding: 0 12px; border-radius: 2px; font-weight: 700; font-size: 13px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">料金プラン</a>
+      <a href="#form" style="white-space: nowrap; background: {{cta}}; color: #0A1B3D; text-decoration: none; padding: 0 14px; border-radius: 2px; font-weight: 700; font-size: 13px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">無料相談</a>
+    </nav>
+  </div>
+</header>
+
+<!-- FV -->
+<section style="background: #0A1B3D; color: #FFFFFF; overflow: hidden">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 28px 16px 44px; display: flex; flex-wrap: wrap; gap: 28px 40px; align-items: center">
+    <div style="flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <p style="margin: 0; align-self: flex-start; background: #FFFFFF; color: #0A1B3D; font-weight: 700; font-size: clamp(12.5px, 3.3vw, 15px); padding: 6px 12px; line-height: 1.5"><span class="nb">楽天・Amazon・自社ECの</span><span class="nb">売上を伸ばしたい企業様へ</span></p>
+      <h1 style="margin: 0; font-weight: 900; line-height: 1.25"><span style="display: block; font-size: clamp(15px, 4vw, 22px); margin-bottom: 4px">月商</span><span class="nb" style="font-size: clamp(30px, 9vw, 64px)"><span class="gl" style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800">50</span><span style="font-size: 0.5em">万円</span><span style="margin: 0 0.15em">→</span></span><span class="nb" style="font-size: clamp(40px, 12.5vw, 88px)"><span class="gy" style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800">1,500</span><span class="gy" style="font-size: 0.42em">万円</span></span><span style="display: block; font-size: clamp(22px, 6.4vw, 40px); margin-top: 4px"><span class="nb">わずか6カ月で、</span><span class="nb">30倍へ。</span></span></h1>
+      <p style="margin: 0; font-size: clamp(14px, 3.7vw, 18px); font-weight: 700; line-height: 1.8"><span class="nb">大手ECモール出身のプロが、</span><span class="nb">戦略・制作・広告・物流まで</span><span class="nb">一気通貫で支援します。</span></p>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(8px, 2.4vw, 16px); max-width: 460px">
+        <div style="aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid {{cta}}; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.25"><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">担当分析</span><span style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(19px, 5.6vw, 30px)">4,000</span><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">社以上</span></div>
+        <div style="aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid {{cta}}; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.25"><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">継続率</span><span style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(19px, 5.6vw, 30px)">96%</span><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">以上</span></div>
+        <div style="aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid {{cta}}; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; line-height: 1.25"><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">月額</span><span style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(19px, 5.6vw, 30px)">10<span style="font-size: 0.55em">万円</span></span><span style="font-weight: 700; font-size: clamp(10px, 2.7vw, 13px)">から</span></div>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 6px">
+        <a href="#form" style="background: {{cta}}; color: #0A1B3D; text-decoration: none; padding: 16px 26px; border-radius: 2px; font-weight: 900; font-size: 17px; box-shadow: 0 8px 24px rgba(10,27,61,0.18); white-space: nowrap">無料でECの相談をする</a>
+        <a href="#price" style="color: #FFFFFF; font-weight: 700; font-size: 14px; min-height: 44px; display: inline-flex; align-items: center; white-space: nowrap">料金プランを見る</a>
+      </div>
+      <p style="margin: 0; font-size: 11.5px; color: #C5D2EA; line-height: 1.7">※健康食品商材の支援事例（ECコンサルティング、広告運用代行、SEO対策代行）。成果は商材や状況により異なります。</p>
+    </div>
+    <div style="flex: 1 1 240px; min-width: 0; display: flex; justify-content: center">
+      <div class="ph" style="width: min(100%, 380px); aspect-ratio: 4 / 5; border: 1px solid #C6A45C"><span style="font-family: 'Inter', sans-serif; font-weight: 700">PHOTO</span><span>コンサルタントの打合せ風景</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRADING RESULTS -->
+<section style="background: #132244; color: #FFFFFF">
+  <div style="max-width: 880px; margin: 0 auto; padding: 96px 20px">
+    <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #C6A45C">TRADING RESULTS</p>
+    <h2 style="margin: 4px 0 28px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px)"><span class="md" style="display: inline-block"><span class="gl">取引実績</span></span></h2>
+    <div style="background: #FFFFFF; border-radius: 3px; padding: 12px; overflow: hidden"><img src="/_blob/1e3ef45836b8328357e584d0b96e043c" alt="取引実績企業のロゴ一覧（Canon、SUNTORY、SoftBank、HAKUHODO ほか）" style="width: 100%; height: auto; display: block"></div>
+    <div style="margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+      <sc-for list="{{awards}}" as="a" hint-placeholder-count="3">
+        <div style="border: 1px solid #5C6A85; border-radius: 3px; padding: 16px; font-size: 13px"><div class="gy" style="font-weight: 900; margin-bottom: 4px; display: inline-block; font-size: 15px">{{a.head}}</div><div>{{a.body}}</div></div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- POINT -->
+<section style="max-width: 1120px; margin: 0 auto; padding: 104px 20px">
+  <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #8A7340">POINT</p>
+  <h2 style="margin: 4px 0 36px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px); line-height: 1.45"><span class="nb">NAVYの</span><span class="nb g">EC総合支援</span><span class="nb">は</span><span class="nb u">ココが違う</span></h2>
+  <div style="max-width: 760px; margin: 0 auto; background: #F5F6F8; border-radius: 3px; padding: clamp(18px, 4vw, 36px) clamp(12px, 3vw, 32px)">
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) clamp(14px, 3vw, 28px) minmax(0, 1fr) clamp(14px, 3vw, 28px) minmax(0, 1fr); align-items: center">
+      <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; background: #0A1B3D; border: 1px solid #C6A45C; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(9px, 2.4vw, 13px); letter-spacing: 0.1em; color: {{cta}}">PEOPLE</span><span style="font-weight: 900; font-size: clamp(15px, 4.4vw, 28px); line-height: 1.25">プロ<br>人材</span></div>
+      <div aria-hidden="true" style="font-weight: 900; font-size: clamp(18px, 4vw, 28px); color: #0A1B3D; text-align: center">×</div>
+      <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; background: #0A1B3D; border: 1px solid #C6A45C; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(9px, 2.4vw, 13px); letter-spacing: 0.1em; color: {{cta}}">DATA</span><span style="font-weight: 900; font-size: clamp(15px, 4.4vw, 28px); line-height: 1.25">独自<br>データ</span></div>
+      <div aria-hidden="true" style="font-weight: 900; font-size: clamp(18px, 4vw, 28px); color: #0A1B3D; text-align: center">×</div>
+      <div style="width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; background: #0A1B3D; border: 1px solid #C6A45C; color: #FFFFFF; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(9px, 2.4vw, 13px); letter-spacing: 0.1em; color: {{cta}}">ONE-STOP</span><span style="font-weight: 900; font-size: clamp(15px, 4.4vw, 28px); line-height: 1.25">一気<br>通貫</span></div>
+    </div>
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) clamp(14px, 3vw, 28px) minmax(0, 1fr) clamp(14px, 3vw, 28px) minmax(0, 1fr); align-items: start; margin-top: 12px">
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; gap: 6px"><p style="margin: 0; font-weight: 700; font-size: clamp(11.5px, 3vw, 15px); line-height: 1.5"><span class="nb">大手ECモール・</span><span class="nb">メーカー店長・</span><span class="nb">通販出身</span></p><div style="width: 2px; height: 14px; background: #9AA8C4"></div><p style="margin: 0; line-height: 1.2; white-space: nowrap"><span class="g" style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(24px, 7.4vw, 44px)">4,000</span><span style="font-weight: 900; font-size: clamp(11px, 3vw, 16px)">社以上</span></p><p style="margin: 0; font-size: clamp(10.5px, 2.7vw, 13px); font-weight: 700; color: #4A5B80; white-space: nowrap">担当分析の経験</p></div>
+      <div></div>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; gap: 6px"><p style="margin: 0; font-weight: 700; font-size: clamp(11.5px, 3vw, 15px); line-height: 1.5"><span class="nb">独自システムで</span><span class="nb">科学的に</span><span class="nb">分析・戦略</span></p><div style="width: 2px; height: 14px; background: #9AA8C4"></div><p style="margin: 0; line-height: 1.2; white-space: nowrap"><span class="g" style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(24px, 7.4vw, 44px)">3,500</span><span style="font-weight: 900; font-size: clamp(11px, 3vw, 16px)">億円以上</span></p><p style="margin: 0; font-size: clamp(10.5px, 2.7vw, 13px); font-weight: 700; color: #4A5B80; white-space: nowrap">担当流通高</p></div>
+      <div></div>
+      <div style="display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0; gap: 6px"><p style="margin: 0; font-weight: 700; font-size: clamp(11.5px, 3vw, 15px); line-height: 1.5"><span class="nb">戦略・制作・</span><span class="nb">広告・物流まで</span><span class="nb">ワンストップ</span></p><div style="width: 2px; height: 14px; background: #9AA8C4"></div><p style="margin: 0; line-height: 1.2; white-space: nowrap"><span class="g" style="font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: clamp(24px, 7.4vw, 44px)">30</span><span style="font-weight: 900; font-size: clamp(11px, 3vw, 16px)">億円以上</span></p><p style="margin: 0; font-size: clamp(10.5px, 2.7vw, 13px); font-weight: 700; color: #4A5B80; white-space: nowrap">広告運用実績</p></div>
+    </div>
+    <div aria-hidden="true" style="margin: 18px auto 0; width: 0; height: 0; border-left: 22px solid transparent; border-right: 22px solid transparent; border-top: 20px solid #003C92"></div>
+    <div style="margin-top: 10px; background: #0A1B3D; color: #FFFFFF; border-radius: 3px; padding: 16px 12px; text-align: center">
+      <p style="margin: 0; font-size: clamp(11px, 2.8vw, 14px); font-weight: 700; color: #C5D2EA"><span class="nb">データ × ユーザインサイト ×</span> <span class="nb">熟考 × 情熱</span></p>
+      <p style="margin: 4px 0 0; font-weight: 900; font-size: clamp(20px, 5.4vw, 32px); line-height: 1.4"><span class="nb gy">高勝率のEC戦略で</span><span class="nb gy">売上拡大へ</span></p>
+    </div>
+  </div>
+  <div style="margin-top: 36px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 14px">
+    <div style="display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; font-weight: 700">
+      <sc-for list="{{channels}}" as="c" hint-placeholder-count="4"><span style="background: #0A1B3D; color: #FFFFFF; padding: 6px 16px; border-radius: 999px; font-size: 14px; white-space: nowrap">{{c}}</span></sc-for>
+      <span style="white-space: nowrap">全チャネル対応</span>
+    </div>
+    <div style="width: 100%; margin-top: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; text-align: left">
+      <sc-for list="{{targets}}" as="t" hint-placeholder-count="3">
+        <div style="background: #F5F6F8; border-radius: 3px; padding: 18px; display: flex; gap: 14px; align-items: center">
+          <span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #003C92; color: #FFFFFF; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px; display: flex; align-items: center; justify-content: center">{{t.no}}</span>
+          <div style="min-width: 0"><div class="g" style="font-weight: 900; font-size: 21px; display: inline-block">{{t.title}}</div><div style="font-size: 14px"><sc-for list="{{t.t}}" as="w" hint-placeholder-count="2"><span class="nb">{{w}}</span></sc-for></div></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section style="background: #F5F6F8">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 96px 20px">
+    <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #8A7340">CASE STUDY</p>
+    <h2 style="margin: 4px 0 32px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px)"><span class="m" style="display: inline-block"><span class="g">導入事例・お客様の声</span></span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+      <sc-for list="{{voices}}" as="v" hint-placeholder-count="3">
+        <figure style="margin: 0; background: #FFFFFF; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column">
+          <figcaption style="background: #0A1B3D; color: #FFFFFF; padding: 14px 18px; display: flex; gap: 12px; align-items: center">
+            <span style="flex: none; width: 52px; height: 52px; border-radius: 50%; border: 1px dashed #9AA8C4; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #C5D2EA; text-align: center; line-height: 1.2">写真</span>
+            <span style="min-width: 0"><span style="display: block; font-size: 11px; color: #C5D2EA">{{v.tag}}</span><span style="display: block; font-weight: 900; font-size: 17px; line-height: 1.4">{{v.who}}</span></span>
+          </figcaption>
+          <div style="padding: 20px 18px; display: flex; flex-direction: column; gap: 12px">
+            <h3 style="margin: 0; font-weight: 900; font-size: 19px; line-height: 1.5"><sc-for list="{{v.t}}" as="w" hint-placeholder-count="2"><span class="nb m"><span class="g">{{w}}</span></span></sc-for></h3>
+            <blockquote style="margin: 0; font-size: 14px; line-height: 1.9">{{v.body}}</blockquote>
+          </div>
+        </figure>
+      </sc-for>
+    </div>
+    <p style="margin: 40px 0 14px; text-align: center; font-weight: 900; font-size: 18px"><span class="nb">そのほかの</span><span class="nb">支援実績</span></p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px">
+      <sc-for list="{{stats}}" as="st" hint-placeholder-count="6">
+        <div style="background: #FFFFFF; border-radius: 3px; padding: 14px 12px; border-top: 4px solid #003C92"><div style="font-size: 12px; font-weight: 700; color: #4A5B80">{{st.who}}</div><div style="font-weight: 900; font-size: 17px; line-height: 1.45; margin-top: 4px"><sc-for list="{{st.t}}" as="w" hint-placeholder-count="2"><span class="nb g">{{w}}</span></sc-for></div></div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- CTA band 1 -->
+<section style="background: #003C92; padding: 44px 16px">
+  <div style="max-width: 640px; margin: 0 auto; background: #FFFFFF; border-radius: 3px; padding: 28px 18px; text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center">
+    <span style="background: #0A1B3D; color: #FFFFFF; font-weight: 700; padding: 6px 24px; border-radius: 999px; font-size: 15px; white-space: nowrap">ECの悩みは今日で最後に</span>
+    <p style="margin: 0; font-weight: 900; font-size: clamp(18px, 2.6vw, 24px); line-height: 1.6"><span class="nb">売上拡大を狙う</span><span class="nb m"><span class="g">EC・デジタル支援</span></span><span class="nb">は</span><br><span class="nb g">ネイビーグループ</span><span class="nb">にお任せ！</span></p>
+    <p style="margin: 0; font-size: 13px; white-space: nowrap">＼EC総合支援について聞いてみる／</p>
+    <a href="#form" style="width: 100%; max-width: 420px; box-sizing: border-box; background: {{cta}}; color: #0A1B3D; text-decoration: none; padding: 16px; border-radius: 2px; font-weight: 900; font-size: 17px; box-shadow: 0 8px 24px rgba(10,27,61,0.18); white-space: nowrap">無料相談はこちら</a>
+  </div>
+</section>
+
+<!-- Worries -->
+<section style="background: #0E1A33; color: #FFFFFF">
+  <div style="max-width: 640px; margin: 0 auto; padding: 96px 20px; display: flex; flex-direction: column; gap: 22px; align-items: center">
+    <sc-for list="{{worries}}" as="w" hint-placeholder-count="6">
+      <div style="width: 100%; box-sizing: border-box; background: transparent; color: #FFFFFF; border-bottom: 1px solid #3A4A6B; padding: 0 4px; display: flex; gap: 10px; align-items: center; min-height: 72px">
+        <div style="flex: 1; min-width: 0; align-self: center; display: flex; gap: 8px; align-items: flex-start; padding: 16px 0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C6A45C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none; margin-top: 4px"><rect x="3" y="3" width="18" height="18" rx="3"></rect><polyline points="7 12 11 16 17 8"></polyline></svg>
+          <p style="margin: 0; font-weight: 700; font-size: clamp(14px, 2vw, 16px); line-height: 1.6">「<sc-for list="{{w.t}}" as="x" hint-placeholder-count="2"><span class="nb">{{x}}</span></sc-for>」</p>
+        </div>
+      </div>
+    </sc-for>
+    <h2 style="margin: 36px 0 0; font-weight: 900; font-size: clamp(22px, 3vw, 30px); white-space: nowrap">わかってはいるけど・・・</h2>
+    <div class="ph" style="width: 100%; max-width: 420px; aspect-ratio: 16 / 9; border: 1px solid #3A4A6B"><span style="font-family: 'Inter', sans-serif; font-weight: 700">PHOTO</span><span>PCの前で悩む担当者</span></div>
+    <p style="margin: 0; text-align: center; font-size: 15px; line-height: 1.9"><span class="nb">やるべきことは分かっていても、</span><span class="nb">人も時間も足りない。</span></p>
+    <p style="margin: 4px 0 0; text-align: center; font-weight: 900; font-size: clamp(20px, 3vw, 30px); line-height: 1.9"><span class="nb">手を付けられないまま</span><br><span class="nb" style="background: #FFFFFF; color: #0A1B3D; padding: 0 10px; border-bottom: 2px solid {{cta}}; line-height: 1.5">機会損失が続いている</span><span class="nb">ことも。</span></p>
+  </div>
+</section>
+<div aria-hidden="true" style="width: 0; height: 0; margin: 0 auto; border-left: 28px solid transparent; border-right: 28px solid transparent; border-top: 24px solid #0E1A33"></div>
+
+<section style="max-width: 880px; margin: 0 auto; padding: 48px 16px 72px; text-align: center">
+  <p style="margin: 0; font-weight: 700; font-size: 18px; line-height: 1.9">しかし<br><span class="nb">NAVYのEC総合支援なら</span><br><span class="nb u">最短ルート</span><span class="nb">を選べます。</span></p>
+  <div style="position: relative; margin-top: 20px; padding: 28px 0 20px">
+    <img src="/_blob/734032dcb20abf1e1c74ffaa7afdeb9a" alt="" style="position: absolute; inset: 0; margin: auto; width: min(100%, 520px); height: 100%; object-fit: contain; z-index: 0">
+    <p style="position: relative; z-index: 1; margin: 0; font-weight: 900; font-size: clamp(24px, 3.8vw, 40px); line-height: 1.6"><span class="nb m"><span class="g">データドリブン</span></span><span class="nb" style="font-size: 0.7em">な戦略と</span><br><span class="nb m"><span class="g">一気通貫の実行体制</span></span><span class="nb" style="font-size: 0.7em">で</span><br><span class="nb m"><span class="g">最速での</span></span><span class="nb m"><span class="g">売上拡大</span></span><span class="nb m"><span class="g">を狙えます！</span></span></p>
+  </div>
+</section>
+
+<!-- REASON -->
+<section style="background: #F5F6F8">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 104px 20px">
+    <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #8A7340">REASON</p>
+    <h2 style="margin: 4px 0 40px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px); line-height: 1.45"><span class="nb">NAVYの</span><span class="nb g">EC総合支援</span><span class="nb">が</span><br><span class="nb">選ばれる理由</span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px">
+      <sc-for list="{{reasons}}" as="r" hint-placeholder-count="4">
+        <div style="background: #FFFFFF; border-radius: 4px; overflow: hidden; display: flex; flex-direction: column">
+          <div class="ph" style="width: 100%; aspect-ratio: 16 / 9"><span style="font-family: 'Inter', sans-serif; font-weight: 700">PHOTO</span><span>{{r.ph}}</span></div>
+          <div style="padding: 22px 20px; display: flex; flex-direction: column; gap: 10px">
+            <span style="align-self: flex-start; background: #0A1B3D; color: #FFFFFF; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 13px; padding: 2px 10px">POINT.{{r.no}}</span>
+            <h3 style="margin: 0; font-weight: 900; font-size: 21px; line-height: 1.45; padding-bottom: 10px; border-bottom: 1px solid #0A1B3D"><sc-for list="{{r.t}}" as="w" hint-placeholder-count="2"><span class="nb g">{{w}}</span></sc-for></h3>
+            <p style="margin: 0; font-size: 14px">{{r.body}}</p>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section style="background: #EEF0F4">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 104px 20px 32px">
+    <p style="margin: 0; font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(44px, 9vw, 72px); line-height: 1; letter-spacing: 0.04em; color: #0A1B3D">SERVICE</p>
+    <h2 style="margin: 14px 0 48px; font-weight: 900; font-size: clamp(18px, 2.6vw, 24px); border-left: 3px solid #003C92; padding-left: 12px; line-height: 1.4"><span class="nb">NAVYの</span><span class="nb">支援内容</span></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 64px 32px">
+      <sc-for list="{{pillars}}" as="pl" hint-placeholder-count="3">
+        <article style="min-width: 0; max-width: 520px; width: 100%; margin: 0 auto; display: flex; flex-direction: column">
+          <div style="position: relative; z-index: 1; display: flex; align-items: center; gap: 10px; margin-bottom: -44px">
+            <span aria-hidden="true" style="flex: none; font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(64px, 19vw, 96px); line-height: 1; color: transparent; -webkit-text-stroke: 1.5px #C6A45C; letter-spacing: -0.02em">{{pl.no}}</span>
+            <div style="min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+              <sc-for list="{{pl.bars}}" as="bar" hint-placeholder-count="2"><span style="background: #0A1B3D; color: #FFFFFF; font-weight: 700; font-size: clamp(14px, 4.2vw, 20px); letter-spacing: 0.08em; padding: 3px 12px; white-space: nowrap">{{bar}}</span></sc-for>
+            </div>
+          </div>
+          <div class="ph" style="width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; border: 1px solid #C6A45C"><span style="font-family: 'Inter', sans-serif; font-weight: 700">PHOTO</span><span>{{pl.ph}}</span></div>
+          <h3 style="margin: -28px 0 0; position: relative; text-align: center; font-weight: 900; font-size: clamp(22px, 5.8vw, 30px); letter-spacing: 0.04em; line-height: 1.4"><sc-for list="{{pl.t}}" as="w" hint-placeholder-count="1"><span class="nb g">{{w}}</span></sc-for></h3>
+          <p style="margin: 16px 0 0; font-size: 15px; line-height: 1.95">{{pl.body}}</p>
+          <ul style="list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px">
+            <sc-for list="{{pl.chips}}" as="ch" hint-placeholder-count="4"><li style="background: #FFFFFF; border: 1px solid #003C92; color: #003C92; font-weight: 700; font-size: 13px; padding: 5px 12px; border-radius: 999px; white-space: nowrap">{{ch}}</li></sc-for>
+          </ul>
+          <a href="#form" style="align-self: flex-end; margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-weight: 700; font-size: 14px; color: #003C92; text-decoration: none; border-bottom: 2px solid #003C92; white-space: nowrap">このサービスを相談する<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="13 6 19 12 13 18"></polyline></svg></a>
+        </article>
+      </sc-for>
+    </div>
+  </div>
+  <div style="height: 40px"></div>
+</section>
+<!-- PRICE -->
+<section id="price" style="scroll-margin-top: 72px; max-width: 1120px; margin: 0 auto; padding: 104px 20px">
+  <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #8A7340">PRICE</p>
+  <h2 style="margin: 4px 0 36px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px)"><span class="m" style="display: inline-block"><span class="g">料金プラン</span></span></h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+    <sc-for list="{{plans}}" as="pl" hint-placeholder-count="4">
+      <div style="border: 2px solid #003C92; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column">
+        <h3 style="margin: 0; background: #003C92; color: #FFFFFF; padding: 14px 16px; font-size: 16px; font-weight: 900; text-align: center">{{pl.name}}</h3>
+        <div style="padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+          <div style="text-align: center"><span class="g" style="font-weight: 900; font-size: 28px; display: inline-block; white-space: nowrap">{{pl.main}}</span></div>
+          <ul style="margin: 0; padding: 0 0 0 18px; font-size: 13.5px; font-weight: 700"><sc-for list="{{pl.fees}}" as="f" hint-placeholder-count="3"><li>{{f}}</li></sc-for></ul>
+          <div style="font-size: 12px; background: #F5F6F8; border-radius: 8px; padding: 8px 10px"><span class="nb">契約期間：{{pl.term}}</span>　<span class="nb">開始目安：{{pl.start}}</span></div>
+          <p style="margin: 0; font-size: 13px">{{pl.desc}}</p>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <h3 style="margin: 40px 0 14px; text-align: center; font-weight: 900; font-size: 18px"><span class="nb">単体でのご依頼も</span><span class="nb">可能です</span></h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px">
+    <sc-for list="{{options}}" as="pl" hint-placeholder-count="4">
+      <div style="border: 2px solid #003C92; border-radius: 3px; overflow: hidden; display: flex; flex-direction: column">
+        <h3 style="margin: 0; background: #003C92; color: #FFFFFF; padding: 14px 16px; font-size: 16px; font-weight: 900; text-align: center">{{pl.name}}</h3>
+        <div style="padding: 20px; display: flex; flex-direction: column; gap: 10px; flex: 1">
+          <div style="text-align: center"><span class="g" style="font-weight: 900; font-size: 28px; display: inline-block; white-space: nowrap">{{pl.main}}</span></div>
+          <ul style="margin: 0; padding: 0 0 0 18px; font-size: 13.5px; font-weight: 700"><sc-for list="{{pl.fees}}" as="f" hint-placeholder-count="3"><li>{{f}}</li></sc-for></ul>
+          <div style="font-size: 12px; background: #F5F6F8; border-radius: 8px; padding: 8px 10px"><span class="nb">契約期間：{{pl.term}}</span>　<span class="nb">開始目安：{{pl.start}}</span></div>
+          <p style="margin: 0; font-size: 13px">{{pl.desc}}</p>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+  <p style="margin: 16px 0 0; font-size: 12.5px; color: #4A5B80">※成果報酬は、定めた月商ラインの超過分を対象に発生します。（例）月商ライン500万円・実績550万円・成果報酬10%の場合、超過分50万円の10%である5万円が対象。料金はショップ規模に応じて異なります。</p>
+  <h3 style="margin: 56px 0 6px; text-align: center; font-weight: 900; font-size: clamp(20px, 3vw, 28px); line-height: 1.5"><span class="nb m"><span class="g">プラン別</span></span><span class="nb m"><span class="g">サポート内容</span></span></h3>
+  <p style="margin: 0 0 16px; text-align: center; font-size: 13px; color: #4A5B80; white-space: nowrap">← 横にスライドできます →</p>
+  <div tabindex="0" role="region" aria-label="プラン別サポート内容の比較表" style="overflow-x: auto; -webkit-overflow-scrolling: touch; background: #0E1A33; padding: 16px 0 16px 12px">
+    <table style="border-collapse: separate; border-spacing: 0; min-width: 760px; width: 100%; font-size: 14px; text-align: center">
+      <thead><tr>
+        <th scope="col" style="position: sticky; left: 0; z-index: 2; background: #7A8496; color: #FFFFFF; width: 150px; min-width: 150px; padding: 20px 8px; font-weight: 700; border-bottom: 3px solid #003C92">基本項目</th>
+        <sc-for list="{{planCols}}" as="pc" hint-placeholder-count="3">
+          <th scope="col" style="background: {{pc.bg}}; color: #FFFFFF; min-width: 190px; padding: 20px 10px; font-weight: 900; font-size: 15px; line-height: 1.4; border-bottom: 3px solid #003C92; border-left: 4px solid #0E1A33"><sc-for list="{{pc.t}}" as="w" hint-placeholder-count="2"><span class="nb">{{w}}</span></sc-for></th>
+        </sc-for>
+      </tr></thead>
+      <tbody>
+        <sc-for list="{{planRows}}" as="pr" hint-placeholder-count="19">
+          <tr>
+            <th scope="row" style="position: sticky; left: 0; z-index: 1; background: #FFFFFF; padding: 16px 8px; font-weight: 700; font-size: 13px; line-height: 1.5; border-bottom: 3px solid #003C92"><span class="g" style="display: inline-block">{{pr.item}}</span><sc-if value="{{pr.note}}" hint-placeholder-val="{{ false }}"><span style="display: block; font-size: 11px; font-weight: 500; color: #4A5B80">{{pr.note}}</span></sc-if></th>
+            <sc-for list="{{pr.cells}}" as="cell" hint-placeholder-count="3">
+              <td style="background: {{cell.bg}}; padding: 16px 8px; border-bottom: 3px solid #003C92; border-left: 4px solid #0E1A33; font-size: 24px; font-weight: 700; color: {{cell.color}}; line-height: 1">{{cell.mark}}</td>
+            </sc-for>
+          </tr>
+        </sc-for>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<!-- CTA band 2 -->
+<section style="background: #003C92; padding: 44px 16px">
+  <div style="max-width: 640px; margin: 0 auto; background: #FFFFFF; border-radius: 3px; padding: 28px 18px; text-align: center; display: flex; flex-direction: column; gap: 12px; align-items: center">
+    <span style="background: #0A1B3D; color: #FFFFFF; font-weight: 700; padding: 6px 24px; border-radius: 999px; font-size: 15px; white-space: nowrap">店舗の課題抽出は無料</span>
+    <p style="margin: 0; font-weight: 900; font-size: clamp(18px, 2.6vw, 24px); line-height: 1.6"><span class="nb">まずは</span><span class="nb m"><span class="g">ECショップ診断</span></span><span class="nb">から</span><br><span class="nb g">ネイビーグループ</span><span class="nb">に</span><span class="nb">ご相談ください</span></p>
+    <a href="#form" style="width: 100%; max-width: 420px; box-sizing: border-box; background: {{cta}}; color: #0A1B3D; text-decoration: none; padding: 16px; border-radius: 2px; font-weight: 900; font-size: 17px; box-shadow: 0 8px 24px rgba(10,27,61,0.18); white-space: nowrap">無料相談はこちら</a>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section style="max-width: 1120px; margin: 0 auto; padding: 104px 20px">
+  <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #8A7340">FLOW</p>
+  <h2 style="margin: 4px 0 36px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px); line-height: 1.45"><span class="nb g">サポート開始</span><span class="nb g">までの流れ</span></h2>
+  <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 14px">
+    <sc-for list="{{flow}}" as="f" hint-placeholder-count="5">
+      <li style="background: #F5F6F8; border-top: 4px solid #003C92; padding: 16px; display: flex; gap: 12px; align-items: baseline">
+        <span class="g" style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 24px; flex: none">{{f.no}}</span>
+        <span style="font-weight: 700; font-size: 14.5px">{{f.text}}</span>
+      </li>
+    </sc-for>
+  </ol>
+</section>
+
+<!-- QUESTION -->
+<section style="background: #0E1A33; color: #FFFFFF">
+  <div style="max-width: 880px; margin: 0 auto; padding: 96px 16px 104px">
+    <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #C6A45C">QUESTION</p>
+    <h2 style="margin: 4px 0 36px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px)"><span style="display: inline-block; border-bottom: 3px solid #FFFFFF; padding-bottom: 2px">よくあるご質問</span></h2>
+    <div style="background: #FFFFFF; color: #0A1B3D; padding: clamp(24px, 5vw, 56px) clamp(16px, 5vw, 56px)">
+      <sc-for list="{{faqs}}" as="q" hint-placeholder-count="5">
+        <details open="{{q.open}}" style="margin-bottom: 20px">
+          <summary style="display: flex; gap: 14px; align-items: center; padding: 14px 0 12px; border-bottom: 2px solid #6B7280; min-height: 44px">
+            <span class="g" style="flex: none; font-family: Georgia, 'Times New Roman', serif; font-weight: 700; font-size: 38px; line-height: 1">Q</span>
+            <span style="flex: 1; min-width: 0; font-weight: 700; font-size: 15px; line-height: 1.6">{{q.q}}</span>
+            <svg class="chev" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#003C92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex: none"><polyline points="5 9 12 16 19 9"></polyline></svg>
+          </summary>
+          <div style="margin: 24px 0 12px; background: #EEEFF1; padding: 22px 20px; display: flex; gap: 12px; align-items: flex-start">
+            <span class="g" style="flex: none; font-weight: 900; font-size: 22px; line-height: 1.4">A</span>
+            <p style="margin: 0; min-width: 0; font-weight: 700; font-size: 14.5px; line-height: 1.9">{{q.a}}</p>
+          </div>
+        </details>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form" style="background: #0A1B3D; color: #FFFFFF">
+  <div style="max-width: 720px; margin: 0 auto; padding: 104px 20px">
+    <p style="margin: 0; text-align: center; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 14px; letter-spacing: 0.28em; color: #C6A45C">FORM</p>
+    <h2 style="margin: 4px 0 12px; text-align: center; font-weight: 900; font-size: clamp(22px, 3.4vw, 36px)"><span class="md" style="display: inline-block"><span class="gl">お問い合わせ</span></span></h2>
+    <p style="margin: 0 0 28px; text-align: center; font-size: 14px; color: #C5D2EA"><span class="nb">ご相談は無料です。</span><span class="nb">入力は4項目だけ。</span></p>
+    <form style="background: #FFFFFF; color: #0A1B3D; border-radius: 3px; padding: clamp(18px, 4vw, 40px); display: flex; flex-direction: column; gap: 18px">
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #C0392B; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>会社名</span><input type="text" style="min-height: 48px; border: 1px solid #9AA8C4; border-radius: 8px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #C0392B; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>氏名</span><input type="text" style="min-height: 48px; border: 1px solid #9AA8C4; border-radius: 8px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #C0392B; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>電話番号</span><input type="tel" style="min-height: 48px; border: 1px solid #9AA8C4; border-radius: 8px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #C0392B; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>メールアドレス</span><input type="email" style="min-height: 48px; border: 1px solid #9AA8C4; border-radius: 8px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #5C6A85; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">任意</span>ご相談内容</span><textarea rows="4" style="border: 1px solid #9AA8C4; border-radius: 8px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400"></textarea></label>
+      <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; min-height: 44px"><input type="checkbox" style="width: 18px; height: 18px; flex: none">個人情報保護方針に同意する</label>
+      <button type="button" style="min-height: 56px; border: 0; border-radius: 2px; background: {{cta}}; color: #0A1B3D; font: inherit; font-weight: 900; font-size: 17px; cursor: pointer; box-shadow: 0 8px 24px rgba(10,27,61,0.18)">無料で相談する</button>
+    </form>
+  </div>
+</section>
+
+<footer style="background: #0A1B3D; color: #C5D2EA; border-top: 1px solid #2B3A5C">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 24px 16px; text-align: center; font-size: 12px">© Navy Group, Inc.</div>
+</footer>
+
+<!-- Sticky bottom CTA -->
+<div style="position: sticky; bottom: 0; z-index: 9; background: rgba(10,27,61,0.97); border-top: 1px solid #C6A45C; padding: 8px 16px; display: flex; justify-content: center">
+  <a href="#form" style="width: 100%; max-width: 520px; display: flex; align-items: center; justify-content: center; gap: 12px; color: #FFFFFF; text-decoration: none; font-weight: 900; font-size: 18px; min-height: 48px; white-space: nowrap">
+    <span style="background: {{cta}}; color: #0A1B3D; width: 46px; height: 46px; border-radius: 999px; display: flex; align-items: center; justify-content: center; font-size: 13px; flex: none">無料</span>
+    <span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 11px; font-weight: 500">＼EC総合支援について／</span>ご相談はこちら</span>
+  </a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"cta":{"editor":"color","default":"#C6A45C","options":["#C6A45C","#D9B86A","#FFC83D","#FFFFFF"]},"$preview":{"width":1280,"height":11600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const P = (s) => s.split('|');
+    const B = (id) => '/_blob/' + id;
+    const W1 = B('1861a0af6b8bb4d6e14fc93b5d73d7f3'), W2 = B('7926bfcabc249a1371e77dc4b5715bd4'), W3 = B('911a05689f13ddd89ef844d93f7aeef7');
+    const worries = [
+      'リソース不足で|売上を上げる施策に|手が回らない',
+      '実務作業が大変で、|分析や運用を|任せられる人がいない',
+      '他社のコンサル・|運用代行から|切り替えたい',
+      '退職者・異動が多く|売上が減少している',
+      'ECサイトを立ち上げたいが、|優先順位がわからない',
+      '商品開発、戦略から|広告運用まで|総合サポートがほしい'
+    ].slice(0, 3).map((s, i) => ({ t: P(s), img: [W1, W2, W3][i % 3], left: i % 2 === 1, right: i % 2 === 0 }));
+    return {
+      cta: this.props.cta ?? '#C6A45C',
+      heroFacts: [
+        { pre: 'EC・デジタル担当分析', num: '4,000', post: '社以上' },
+        { pre: '担当流通高', num: '3,500', post: '億円以上' },
+        { pre: '広告運用実績', num: '30', post: '億円以上' }
+      ],
+      points: [
+        { no: '1', t: P('大手ECモール・|元メーカー店長・|通販出身の|プロが担当') },
+        { no: '2', t: P('独自システムによる|科学的で緻密な|分析戦略') },
+        { no: '3', t: P('戦略・制作・|広告・物流まで|ワンストップ') }
+      ],
+      channels: ['楽天', 'Amazon', 'Yahoo!ショッピング', 'au PAYマーケット', 'Qoo10', '自社サイト(D2C)'],
+      targets: [
+        { no: '1', title: '規模不問', t: P('中小〜上場企業|幅広くサポート') },
+        { no: '2', title: '業種不問', t: P('全業種経験から|商材問わずサポート') },
+        { no: '3', title: 'チャネル不問', t: P('ECモールは勿論、|全チャネル対応') }
+      ],
+      worries,
+      reasons: [
+        { no: '1', img: B('81cb595bdbf24745f4798ab8b69020fc'), ph: '分析画面を見るコンサルタント', t: P('累計4,000社以上の|担当分析経験'), body: '日本最大手ECモールでの豊富な担当分析経験から、業種・商品ごとの相対的な感覚値を保有。正値でクライアントの良しあしを分析でき、全業種・全業態に対応可能です。' },
+        { no: '2', img: B('04f8d01cc66d6978d4cb0ab1c65ff99a'), ph: 'ダッシュボードとデータ', t: P('独自システムによる|データドリブン戦略'), body: '豊富な自社システム・ツールで市場・競合データを収集し、顧客データに基づいた戦略を立案。定量データに基づく提案に徹しています。' },
+        { no: '3', img: B('763d8fba183a72c81b8c0d6bab3f4d00'), ph: '社内チームのミーティング', t: P('重要項目は|すべて社内で完結'), body: '一部実務サポートを除き、外部に投げることは一切しません。数よりも質で勝負し、クオリティを担保しています。' },
+        { no: '4', img: B('460d4212f45ad9dc4492bb5488d730f1'), ph: 'クライアントとの商談', t: P('営業利益軸で提案し、|仕組化まで支援'), body: '委託費を含めた営業利益軸で計算してご提案。さらに貴社内に仕組化を構築していくため、属人的要素を懸念する必要もありません。' }
+      ],
+      services: [
+        { img: B('3d52a8ca0cbb08b2ccbb0c2d16cd83b1'), t: P('EC運営代行'), body: '4,000社のデータベースを駆使した分析戦略、制作、実務、広告運用をワンストップで支援。' },
+        { img: B('8b9ce69f43638438c8d9fc7f9b24cffd'), t: P('戦略コンサル'), body: 'AI Agentを搭載した独自システムNAMSを活用し、調査・分析・仮説思考・戦略施策立案を行います。' },
+        { img: B('b0bdef4c67f1520609775fb32e53d04f'), t: P('広告運用'), body: 'ROI・ROAS・CPOを最大化する総合支援。約3ヶ月で効果が実感できます。継続率96%以上。' },
+        { img: B('d33644eead2ce09a8fee8a1e74f5c56f'), t: P('撮影・制作・|SNS運用'), body: '制作実績は5,000超。撮影からサイト構築、LP制作、バナー、コンテンツ開発、SNS運用まで。' },
+        { img: B('9141f7cd9ee1a0d8f1a5dc36a77cf2db'), t: P('物流支援'), body: '全国200カ所の物流拠点を提供。導入からディレクションまで対応します。' },
+        { img: B('7c633ac7788d36b7fbbac30e437ed91b'), t: P('受注・|CS対応'), body: '自社サイト、ECモール問わず、ISMSに則った情報セキュリティ管理を徹底したバックオフィス支援。' }
+      ],
+      pillars: [
+        { ph: '戦略会議の様子', no: '01', bars: ['売れる戦略を、', 'データで描く'], img: B('99e1c33317a95b1090ef9097f2af25a9'), t: P('戦略コンサル'), body: 'AI Agentを搭載した独自システムNAMSを活用し、EC・マーケティング・デジタルのあらゆる領域で調査、分析、仮説思考、戦略施策立案を行います。4,000社のデータベースと大手ECモール出身者の感覚値をもとに、勝算の高い戦略をご提案します。', chips: ['市場・競合分析', '戦略・施策策定', '目標・KPI設計', '利益管理'] },
+        { ph: '撮影・制作の現場', no: '02', bars: ['実務も制作も、', '丸ごと任せる'], img: B('47180583c4c3c0f0f195cd6b26af180d'), t: P('EC運営代行・|SNS運用・|撮影制作'), body: '分析戦略、制作、実務、広告運用をワンストップで支援します。撮影からサイト構築、LP制作、バナー、コンテンツ開発、SNS運用まで、制作実績5,000超のチームが対応。社内に人を置けない企業様も丸ごとお任せいただけます。', chips: ['商品ページ編集', 'LP・バナー制作', '撮影', 'メルマガ配信', 'SNS運用'] },
+        { ph: '物流倉庫と広告運用', no: '03', bars: ['集客から配送まで、', '止めない'], img: B('0439851b1023787ee5fc59af06661b1f'), t: P('広告運用・|物流支援'), body: 'ROI・ROAS・CPOを最大化する広告運用（継続率96%以上）に加え、全国200カ所の物流拠点、ISMSに則った受注・CS対応までご提供します。売上を支える裏側もまとめてお任せいただけます。', chips: ['広告運用', '物流支援', '受注処理', 'CS対応'] }
+      ],
+      chain: [
+        { no: '01', text: '市場・競合分析' },
+        { no: '02', text: '戦略・目標設計' },
+        { no: '03', text: '制作・ページ改善' },
+        { no: '04', text: '広告運用・CRM' },
+        { no: '05', text: '物流・受注CS' }
+      ],
+      phases: [
+        { range: '月商1,000万円以下', body: 'ECでどのように売上拡大をすればよいか、ECノウハウを徹底伝授。' },
+        { range: '月商1,000万〜3,000万円', body: '新規顧客の継続的獲得戦略とリピート（CRM）対策で、月商1億円突破に向けた基盤を構築。' },
+        { range: '月商3,000万〜1億円', body: '経営軸、商品軸、人材軸、物流軸など、企業毎の課題に対するソリューションを提案。' },
+        { range: '月商1億円以上', body: 'メディアプランニング、ブランディング、新商品開発サポートで重要経営指標の課題を解決。' }
+      ],
+      clients: ['キヤノン|マーケティング|ジャパン 様', 'フジッコ 様', 'ロート製薬グループ|ジェヌインR&D 様', 'Lipton 様', '道南平塚食品 様', 'スタイリッシュ|H&A 様', 'プリベント|メディカル 様'].map(P),
+      awards: [
+        { head: 'EC支援年間大賞 受賞実績', body: '楽天ショップオブザイヤー2021/2022、ヤフーベストストアアワード2021/2022、auベストショップアワード2021/2022' },
+        { head: '大手ECモール受賞実績', body: '楽天賞MVP含む3回、部門賞MIP14回' },
+        { head: 'Amazon パートナー', body: '[バッジ画像を配置：Amazon Ads Verified Partner ほか]' }
+      ],
+      cases: [
+        { no: '01', t: P('6カ月で|月商50万円→|1,500万円'), who: '健康食品商材', issue: '売上が50万円から上がらない。', action: '独自システムで市場・競合調査を実施し目標数値を設定。競合優位性を落とし込んだ「売れるデザイン制作」と、受注データ解析に基づくマーケティング戦略を実行。', result: '月商50万→月商1,500万（30倍以上伸長）まで6カ月で成長' },
+        { no: '02', t: P('1か月1チャネルで|単品売上|5,000万円'), who: 'ヘアケア商品（新商品）', issue: '新商品開発したヘアケア商品で市場シェア1位を獲得したい。', action: '商品販売戦略、ECマーケティングのプランニングを実施。メディアレップとなり媒体選定調整とクリエイティブ作成・配信を実施。', result: '1か月1チャネルで単品売上5,000万円を達成。その後5カ月で利益回収' },
+        { no: '03', t: P('7カ月で|月商1,000万円を|突破'), who: '卸メインの企業', issue: '卸をメインに事業展開してきたため、B2C/ECのノウハウがない。', action: '各主要KPI（UU/CVR/AOV）観点で年間売上戦略とノウハウを伝授し、自社で回る仕組化を構築。', result: '広告出稿金額を業界平均の1/3まで抑え、営業利益率20%以上で着地' }
+      ],
+      miniCases: [
+        { who: 'インナー・下着企業様', t: P('7カ月で|月商6,000万→|1億円') },
+        { who: '自動車パーツ企業様', t: P('7カ月で|200万→|800万') },
+        { who: '日用品・インテリア用品企業様', t: P('6カ月で|月商150万→|1,800万') }
+      ],
+      voices: [
+        { t: P('EC支援会社の切替で|売上130%改善を|1カ月後に達成'), body: '別のEC支援会社さんでEC運営代行をお願いしていましたが、スピードが遅く何をしているか不透明な部分が多く不安が続きました。分析・戦略が強いネイビーさんに切り替え、1カ月後から早速売上改善効果が出て130%以上の伸長ができました。', who: '道南平塚食品 様', tag: '食品 / EC運営代行' },
+        { t: P('丁寧で密な|コミュニケーションと|利益追求意識に|プロを感じた'), body: '10社程から選定しました。“非常に丁寧で密なコミュニケーション”と、費用を最大限抑えた形で売上拡大ができる点が素晴らしいです。非常に細かく具体的な提案と実際の実行をいただいています。', who: 'フジッコ 様', tag: '食品 / EC運営代行' },
+        { t: P('退社による売上減少から|楽天運営代行により|急回復'), body: '急な退職により売上が減少しており困っている中、10社程のEC支援会社の中から最終選定。決め手は「圧倒的な分析粒度の高さ」「定量且つ具体的提案」でした。最終的にはAmazonや自社含めお任せしています。', who: 'スタイリッシュH&A 様', tag: '楽天・Amazon・自社EC / 運営代行' }
+      ],
+      compare: [
+        { item: '戦略提案', a: 'データに基づいた定量的・科学的な戦略提案', b: '定性的な仮説提案' },
+        { item: '支援内容', a: '真因を特定し、解決策の提案から実行まで', b: '課題を毎月提示し、売上状況を報告するだけ' },
+        { item: '体制', a: '重要項目はすべて社内で完結', b: '根幹の戦略を外部・アルバイトに丸投げ' },
+        { item: '判断基準', a: '大手モール出身者の相対的な感覚値で正値を判断', b: '自社の担当企業の数値しか見られない' },
+        { item: '提案の軸', a: '委託費を含めた営業利益軸', b: '売上は伸びても費用倒れになることも' },
+        { item: '仕組化', a: '貴社内に仕組化を構築し、属人性を排除', b: '属人的になりやすい' }
+      ],
+      plans: [
+        { name: 'コンサルティングプラン', main: '月額10万円〜', fees: ['初期費用5万円', '成果報酬10%'], term: '1年/6ヶ月', start: '1週間後', desc: '実務作業はお客様で対応。分析・戦略施策立案・施策実行サポートに特化してKPI達成をサポート。' },
+        { name: 'コンサル＋制作・一部運用プラン', main: '[料金を記入]', fees: ['[初期費用を記入]', '[成果報酬を記入]'], term: '[要確認]', start: '[要確認]', desc: 'コンサルティングに加えて、LP・バナー・商品画像の制作、メルマガ配信、商品ページ編集まで対応。' },
+        { name: '運営代行プラン', main: '月額15万円〜', fees: ['初期費用10万円', '成果報酬10%'], term: '1年/6ヶ月', start: '2週間後', desc: 'コンサル＋制作＋実務作業を含めたプラン。包括的支援でスピード感をもった支援が可能。' }
+      ],
+      options: [
+        { name: '広告運用代行', main: '運用手数料15%', fees: ['初期費用10万円', '月額固定費0円', 'ECモール外は手数料20%'], term: '6カ月毎', start: '3日後', desc: '予実管理、分析、チューニング、レポート、貴社専用ツール作成まで完全運用代行。' },
+        { name: '高品質LP制作', main: '目安20万円〜', fees: ['PC/SP完全オリジナルデザイン'], term: '納品まで', start: '即日', desc: 'デザインコンサル、構成代行、ワイヤーフレーム作成、デザイン制作、コーディングと一気通貫で対応。' }
+      ],
+      stats: [
+        ['健康食品', '6カ月で|月商50万→|1,500万'], ['ヘアケア（新商品）', '1か月で|単品売上|5,000万円'], ['卸メインの企業', '7カ月で|月商1,000万円|突破'],
+        ['インナー・下着', '7カ月で|月商6,000万→|1億円'], ['自動車パーツ', '7カ月で|200万→|800万'], ['日用品・インテリア', '6カ月で|月商150万→|1,800万']
+      ].map(([who, s]) => ({ who, t: P(s) })),
+      planCols: [
+        { t: P('コンサルティング|プラン'), bg: '#003C92' },
+        { t: P('コンサル＋制作・|一部運用プラン'), bg: '#D0271D' },
+        { t: P('運営代行|プラン'), bg: '#1F6FEB' }
+      ],
+      planRows: [
+        ['戦略・施策策定', '', 7], ['分析、解析、ツール作成', '', 7], ['アクセス向上改善サポート', '', 7], ['転換率向上改善サポート', '', 7], ['客単価向上改善サポート', '', 7], ['リピート向上改善サポート', '', 7],
+        ['広告運用', '選定、制作、入稿、審査、効果測定、報告', 7], ['モール担当者との斡旋', '', 7], ['最新情報のご提供', '', 7], ['随時ご相談', '', 7], ['定例会議月1回', 'Web会議にて', 7],
+        ['新商品・特集ページ(LP)制作', '', 3], ['バナー制作', '', 3], ['商品画像制作', '', 3], ['メルマガ配信', '', 3], ['商品ページ編集', '', 3],
+        ['受注代行・対応', '※オプションあり', 1], ['カスタマー対応', '※オプションあり', 1], ['物流対応', '※提携企業をご紹介', 1]
+      ].map(([item, note, bits]) => ({ item, note, cells: [4, 2, 1].map((b, i) => (bits & b) ? { mark: '○', color: ['#003C92', '#D0271D', '#1F6FEB'][i], bg: i === 0 ? '#F9F6EC' : '#FFFFFF' } : { mark: '－', color: '#9AA3B2', bg: i === 0 ? '#F9F6EC' : '#FFFFFF' }) })),
+      flow: [
+        { no: '01', text: 'ご依頼内容、課題、想いなどをヒアリング' },
+        { no: '02', text: '貴社に則したプランと金額をご提示' },
+        { no: '03', text: '誓約書締結。サポート開始日より詳細分析開始' },
+        { no: '04', text: '具体的戦略と毎月の目標設定、課題を決めて共有' },
+        { no: '05', text: 'キックオフ会議を開きフォローをスタート' }
+      ],
+      faqs: [
+        { open: true, q: '売上が上がらない、何からすべきですか？ノウハウがないです。', a: '人と同様に店舗毎に状態・課題は全く異なります。店舗の健康状態を分析し、御社の課題抽出を無料で行い、適切なプランをご提案します。' },
+        { open: true, q: '社内は人手不足でECに人を置けません。丸ごとお任せすることは可能でしょうか。', a: 'ネットショップ運営に関する全てをワンストップで代行可能です。企画、商品撮影、市場・競合調査、戦略・目標設計、利益管理、ページ編集、バナー作成、SEO、SNS、広告運用、メルマガ、CRM戦略、レポート作成等が可能です。' },
+        { open: false, q: '予算の兼合いで一部分だけお任せする事も可能でしょうか？', a: '可能です。但し複数の要素が混ざり合い初めて一つの売上の塊ができるので、パッケージでの契約をお勧めいたします。' },
+        { open: false, q: '売上は上がってるのですが利益が出ないです…', a: '営業利益を管理するツールを御社仕様に作成し、運用が可能です。どこにコストがかかっているのか分析を行い、コスト改善のご提案、利益がでる仕組化を構築していきます。' },
+        { open: false, q: '委託しても属人的過ぎないか不安です。', a: '仕組化を図り属人性要素を最大限排除していきます。結果的に雇用よりもコストを抑え、パートナーとして歩む事が可能です。' },
+        { open: false, q: '広告効果が出ません。運用をお願いできますか？', a: '可能です。予算・目標設定、枠選定、入稿、分析・改善、レポート等ワンストップで支援します。' }
+      ],
+      topics: ['ECショップ診断', 'EC立上げ', 'ECコンサル', 'EC運営代行', '広告運用', 'デザイン制作', 'SNS運用', 'AIO/SEO', '開発', '物流支援', '他']
+    };
+  }
+}
+</script>
+</body>
+</html>
