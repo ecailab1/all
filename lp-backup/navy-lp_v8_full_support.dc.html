@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>NAVY EC総合支援 LP v8</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&amp;family=Inter:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFFFFF;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+a{color:#0B5BD3}a:hover{color:#0847A6}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+.plus{transition:transform .2s}details[open] .plus{transform:rotate(45deg)}
+.nb{display:inline-block;max-width:100%}
+.m{background:linear-gradient(transparent 56%,#FFE27A 56%,#FFE27A 94%,transparent 94%)}
+.wrap{max-width:1120px;margin:0 auto;padding:88px 18px;box-sizing:border-box}
+.lb{display:flex;align-items:center;gap:12px;margin:0 0 22px;font-family:'Inter',sans-serif;font-weight:800;font-size:12px;letter-spacing:.24em;color:#0B5BD3}
+.lb::before{content:"";width:28px;height:2px;background:currentColor;flex:none}
+.lb.d{color:#5CC8F0}
+.h2{margin:0 0 18px;font-weight:900;font-size:clamp(26px,6.6vw,40px);line-height:1.45;letter-spacing:.02em}
+.lead{margin:0;font-size:15px;line-height:2;color:#4B5B70}
+.lead.d{color:#B8C7DB}
+.card{background:#FFFFFF;border:1px solid #D5DEE9;padding:28px 22px;box-sizing:border-box}
+.dcard{background:#0E2A4D;border-bottom:1px solid #24466F;padding:28px 22px;box-sizing:border-box}
+.no{font-family:'Inter',sans-serif;font-weight:800;font-size:13px;letter-spacing:.1em;color:#0B5BD3}
+.no.d{color:#5CC8F0}
+.en{font-family:'Inter',sans-serif;font-weight:800;font-size:11px;letter-spacing:.2em;color:#0B5BD3}
+.btn{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:58px;padding:0 20px;box-sizing:border-box;font-weight:700;font-size:16px;text-decoration:none;border-radius:2px}
+.btn.p{background:#0B5BD3;color:#FFFFFF}.btn.p:hover{background:#0847A6;color:#FFFFFF}
+.btn.o{background:#FFFFFF;color:#0B1B33;border:1px solid #B9C6D6}.btn.o:hover{color:#0B5BD3}
+.ul{display:inline-flex;align-items:center;gap:12px;min-height:44px;border-bottom:1px solid #0B5BD3;color:#0B1B33;font-weight:700;font-size:14px;text-decoration:none}
+.ul.d{color:#FFFFFF;border-bottom-color:#5CC8F0}.ul.d:hover{color:#5CC8F0}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-top:1px solid #D5DEE9;font-weight:700;font-size:14px}
+.tile{position:relative;z-index:1;background:rgba(14,42,77,.94);border:1px solid #2A5C8F;border-bottom:2px solid #5CC8F0;padding:14px 12px;display:flex;flex-direction:column;gap:3px;min-width:0}
+</style>
+</helmet>
+<div style="font-family: 'Noto Sans JP', system-ui, sans-serif; color: #0B1B33; background: #FFFFFF; line-height: 1.8; line-break: strict; word-break: auto-phrase; overflow-wrap: anywhere">
+
+<!-- Header -->
+<header style="position: sticky; top: 0; z-index: 10; background: #FFFFFF; border-bottom: 1px solid #D5DEE9">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 8px 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px">
+    <img src="/_blob/8204050c54d3e1a4293b1b7643afaf46" alt="Navy Group" style="height: 36px; width: auto; display: block; flex: none">
+    <nav aria-label="主要メニュー" style="display: flex; gap: 6px; align-items: center; flex: none">
+      <a href="#price" style="white-space: nowrap; color: #0B1B33; text-decoration: none; padding: 0 10px; font-weight: 700; font-size: 13px; min-height: 44px; display: inline-flex; align-items: center; border: 1px solid #B9C6D6; border-radius: 2px">料金プラン</a>
+      <a href="#form" style="white-space: nowrap; background: #0B5BD3; color: #FFFFFF; text-decoration: none; padding: 0 14px; border-radius: 2px; font-weight: 700; font-size: 13px; min-height: 44px; display: inline-flex; align-items: center">無料相談</a>
+    </nav>
+  </div>
+</header>
+
+<!-- FV -->
+<section style="background: repeating-linear-gradient(180deg, #FFFFFF 0, #FFFFFF 28px, #EEF2F7 28px, #EEF2F7 29px)">
+  <div class="wrap" style="padding-top: 64px; padding-bottom: 56px; display: flex; flex-wrap: wrap; gap: 40px 56px; align-items: center">
+    <div style="flex: 999 1 460px; min-width: 0">
+      <p class="lb">EC GROWTH PARTNER</p>
+      <h1 style="margin: 0 0 24px; font-weight: 900; font-size: clamp(34px, 9.4vw, 64px); line-height: 1.35; letter-spacing: 0.01em"><span class="nb">売上だけでなく、</span><br><span class="nb m">利益まで残す</span><br><span class="nb">EC支援。</span></h1>
+      <p class="lead" style="margin-bottom: 10px"><span class="nb">委託費まで含めた営業利益軸でご提案。</span><span class="nb">大手ECモール出身のプロが、</span><span class="nb">戦略・制作・広告・物流まで</span><span class="nb">一つの窓口で支援します。</span></p>
+      <p class="lead" style="font-size: 13.5px"><span class="nb">今のEC運営に手応えを感じられていない段階でも、</span><span class="nb">現状の課題から優先順位を整理します。</span></p>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 32px; max-width: 460px">
+        <a class="btn p" href="#form"><span>無料相談</span><span aria-hidden="true">↗</span></a>
+        <a class="btn o" href="#price"><span>料金プランを見る</span><span aria-hidden="true">→</span></a>
+      </div>
+      <p style="margin: 14px 0 0; font-size: 12px; color: #4B5B70">必須5項目／ご相談・資料請求は無料</p>
+    </div>
+    <div style="flex: 1 1 300px; min-width: 0; display: flex; justify-content: center">
+      <img src="/_blob/c353fa91594ae4542bf03234542657bc" alt="会議テーブルを囲んで打ち合わせをするチーム" style="width: min(100%, 400px); aspect-ratio: 4 / 5; object-fit: cover; display: block">
+    </div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section style="background: #FFFFFF">
+  <div class="wrap" style="padding-top: 64px; padding-bottom: 72px; max-width: 880px">
+    <p class="lead">ネイビーグループは、楽天・Amazon・自社サイトなどマルチチャネルで、ブランディングから分析戦略、制作、広告運用までを一気通貫で支援する、EC・デジタルマーケティング会社です。単なる制作や作業代行にとどまらず、売上と利益をしっかり残すEC運営の実現に向けて、課題解決に取り組んでいます。</p>
+    <ul style="list-style: none; margin: 24px 0; padding: 20px 20px; background: #F1F5F9; border-left: 3px solid #0B5BD3; display: flex; flex-direction: column; gap: 10px; font-weight: 700; font-size: 15px">
+      <li>・売上を上げたいが、リソースが足りない</li>
+      <li>・実務作業が大変で、分析や運用を任せられる人がいない</li>
+      <li>・退職者や異動が多く、売上が減少している</li>
+    </ul>
+    <p class="lead">といった現場の声に向き合い、分析・戦略立案・施策実行までを一つの窓口で担います。</p>
+    <p style="margin: 28px 0 0; font-weight: 900; font-size: clamp(20px, 5.4vw, 30px); line-height: 1.7"><span class="nb">いわゆる「外注業者」ではなく、</span><br><span class="nb m">共に喜びあえる伴走者</span><span class="nb">として。</span></p>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section style="background: #F1F5F9">
+  <div class="wrap">
+    <p class="lb">IN NUMBERS</p>
+    <h2 class="h2"><span class="nb">数字で見る</span><span class="nb">NAVYの支援実績</span></h2>
+    <div style="margin-top: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0">
+      <sc-for list="{{nums}}" as="nm" hint-placeholder-count="6">
+        <div class="card" style="margin: -1px 0 0 -1px; padding: 22px 16px; text-align: center"><p style="margin: 0; font-size: 12.5px; font-weight: 700; color: #4B5B70">{{nm.label}}</p><p style="margin: 6px 0 0; white-space: nowrap; line-height: 1.2"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(30px, 8.4vw, 46px); color: #0B5BD3">{{nm.num}}</span><span style="font-weight: 900; font-size: 13px; margin-left: 2px">{{nm.unit}}</span></p></div>
+      </sc-for>
+    </div>
+    <p style="margin: 12px 0 0; font-size: 11.5px; color: #4B5B70">※ネイビーグループ公式サイト掲載の数値。継続率は広告運用サービスの数値です。</p>
+  </div>
+</section>
+
+<!-- TRADING RESULTS -->
+<section style="background: #FFFFFF">
+  <div class="wrap">
+    <p class="lb">TRADING RESULTS</p>
+    <h2 class="h2"><span class="nb">上場企業から中小企業まで、</span><span class="nb">幅広い取引実績</span></h2>
+    <div style="border: 1px solid #D5DEE9; padding: 10px; margin-top: 28px"><img src="/_blob/1e3ef45836b8328357e584d0b96e043c" alt="取引実績企業のロゴ一覧（Canon、SUNTORY、SoftBank、HAKUHODO ほか）" style="width: 100%; height: auto; display: block"></div>
+    <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0">
+      <sc-for list="{{awards}}" as="a" hint-placeholder-count="3">
+        <div class="card" style="margin: -1px 0 0 -1px"><p class="en" style="margin: 0 0 8px">AWARD</p><p style="margin: 0 0 6px; font-weight: 900; font-size: 16px">{{a.head}}</p><p style="margin: 0; font-size: 13px; color: #4B5B70">{{a.body}}</p></div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- OPTIMIZATION -->
+<section style="background: #FFFFFF">
+  <div class="wrap" style="padding-bottom: 40px">
+    <p class="lb">OPTIMIZATION</p>
+    <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; color: #0B5BD3"><span class="nb">「データ × ユーザインサイト × 熟考 × 情熱」が</span><span class="nb">NAVYの支援の軸です。</span></p>
+    <h2 class="h2"><span class="nb">分析・戦略・実行を一体化し、</span><span class="nb">高勝率のEC戦略へ</span></h2>
+    <p class="lead">独自システム・ツールでスピード感をもって市場・競合データを収集し、熟考する時間を担保します。成功のコンセプトとノウハウは社内全体で研修・共有・仕組化し、属人的要素を排除。大手ECモール・元メーカー店長・通販出身のプロが連携し、戦略立案だけにも作業代行だけにもとどまらない支援を実現します。</p>
+  </div>
+</section>
+<!-- DIAGRAM -->
+<section style="background: linear-gradient(180deg, #FFFFFF 0, #FFFFFF 72px, #071A33 72px)">
+  <div style="max-width: 760px; margin: 0 auto; padding: 0 18px 72px; box-sizing: border-box">
+    <div style="position: relative; overflow: hidden; background: radial-gradient(ellipse at 50% 46%, #123E69 0%, #06162C 66%); border: 1px solid #1E4A78; padding: 18px 16px 20px; color: #FFFFFF">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px; padding-bottom: 14px; border-bottom: 1px solid #1E4A78; margin-bottom: 18px">
+        <span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: 11px; letter-spacing: 0.2em; border: 1px solid #FFFFFF; padding: 3px 8px">NAVY</span>
+        <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: 9.5px; letter-spacing: 0.18em; color: #B8C7DB; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap"><span aria-hidden="true" style="width: 7px; height: 7px; border-radius: 50%; background: #3DDC97; display: inline-block"></span>INTEGRATED / 04 STRENGTHS</span>
+      </div>
+      <div aria-hidden="true" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -52%); width: 42%; max-width: 250px; aspect-ratio: 1 / 1.45; border-radius: 50%; background: radial-gradient(ellipse at 50% 50%, #7FDBF7 0%, #2FA3D6 70%, #1C7FB8 100%); z-index: 0"></div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+        <div class="tile"><span class="no d" style="font-size: 9px">01 / PEOPLE</span><span style="font-weight: 900; font-size: clamp(15px, 4.2vw, 20px)">プロ人材</span><span style="font-size: 10.5px; color: #B8C7DB; line-height: 1.5"><span class="nb">ECモール・メーカー・</span><span class="nb">通販出身</span></span><span style="margin-top: 6px; white-space: nowrap"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(22px, 6.4vw, 34px); color: #5CC8F0; line-height: 1.1">4,000</span><span style="font-weight: 700; font-size: 11px">社以上</span></span><span style="font-size: 10px; color: #B8C7DB">担当分析の経験</span></div>
+        <div class="tile"><span class="no d" style="font-size: 9px">02 / DATA</span><span style="font-weight: 900; font-size: clamp(15px, 4.2vw, 20px)">独自データ</span><span style="font-size: 10.5px; color: #B8C7DB; line-height: 1.5"><span class="nb">独自システムで</span><span class="nb">科学的に分析</span></span><span style="margin-top: 6px; white-space: nowrap"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(22px, 6.4vw, 34px); color: #5CC8F0; line-height: 1.1">3,500</span><span style="font-weight: 700; font-size: 11px">億円以上</span></span><span style="font-size: 10px; color: #B8C7DB">担当流通高</span></div>
+      </div>
+      <div style="position: relative; z-index: 1; margin: clamp(14px, 4vw, 26px) auto; width: 34%; max-width: 210px; aspect-ratio: 1 / 1; border-radius: 50%; background: #0A2443; border: 1px dashed #5CC8F0; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 2px">
+        <span style="font-family: 'Inter', sans-serif; font-weight: 700; font-size: clamp(7px, 1.9vw, 10px); letter-spacing: 0.24em; color: #5CC8F0">NAVY</span>
+        <span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(12px, 3.6vw, 20px); line-height: 1.15">PROFIT<br>GROWTH</span>
+        <span style="font-family: 'Inter', sans-serif; font-weight: 600; font-size: clamp(5.5px, 1.5vw, 8px); letter-spacing: 0.16em; color: #B8C7DB">STRATEGY + EXECUTION</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
+        <div class="tile"><span class="no d" style="font-size: 9px">03 / ONE-STOP</span><span style="font-weight: 900; font-size: clamp(15px, 4.2vw, 20px)">一気通貫</span><span style="font-size: 10.5px; color: #B8C7DB; line-height: 1.5"><span class="nb">戦略・制作・</span><span class="nb">広告・物流まで</span></span><span style="margin-top: 6px; white-space: nowrap"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(22px, 6.4vw, 34px); color: #5CC8F0; line-height: 1.1">30</span><span style="font-weight: 700; font-size: 11px">億円以上</span></span><span style="font-size: 10px; color: #B8C7DB">広告運用実績</span></div>
+        <div class="tile"><span class="no d" style="font-size: 9px">04 / PROFIT</span><span style="font-weight: 900; font-size: clamp(15px, 4.2vw, 20px)">営業利益軸</span><span style="font-size: 10.5px; color: #B8C7DB; line-height: 1.5"><span class="nb">委託費まで含めて</span><span class="nb">計算・提案</span></span><span style="margin-top: 6px; white-space: nowrap"><span style="font-family: 'Inter', sans-serif; font-weight: 800; font-size: clamp(22px, 6.4vw, 34px); color: #5CC8F0; line-height: 1.1">96%</span><span style="font-weight: 700; font-size: 11px">以上</span></span><span style="font-size: 10px; color: #B8C7DB">継続率</span></div>
+      </div>
+      <div style="margin-top: 20px; padding-top: 14px; border-top: 1px solid #1E4A78">
+        <p style="margin: 0 0 8px; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 8.5px; letter-spacing: 0.2em; color: #B8C7DB">SUPPORT FLOW</p>
+        <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; text-align: center; font-size: clamp(9px, 2.5vw, 12px); font-weight: 700">
+          <sc-for list="{{chainShort}}" as="c" hint-placeholder-count="5"><li style="border-top: 2px solid #5CC8F0; padding-top: 6px"><span style="display: block; font-family: 'Inter', sans-serif; font-size: 9px; color: #5CC8F0">{{c.no}}</span>{{c.text}}</li></sc-for>
+        </ol>
+      </div>
+    </div>
+    <div style="margin-top: 28px; color: #FFFFFF; border-left: 2px solid #5CC8F0; padding-left: 14px; display: flex; flex-direction: column; gap: 6px">
+      <span class="en" style="color: #5CC8F0">CASE</span>
+      <span style="font-size: 14px; font-weight: 700; line-height: 1.7"><span class="nb">健康食品EC｜</span><span class="nb">6カ月で月商50万円→1,500万円</span></span>
+      <span style="font-size: 14px; font-weight: 700; line-height: 1.7"><span class="nb">卸企業のEC参入｜</span><span class="nb">広告費を業界平均の1/3に抑え、</span><span class="nb">営業利益率20%以上</span></span>
+      <span style="font-size: 11.5px; color: #B8C7DB">※成果は商材や状況により異なります。</span>
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+<section style="background: #F1F5F9">
+  <div class="wrap" style="max-width: 880px; text-align: center">
+    <p class="lb" style="justify-content: center">OUR POLICY</p>
+    <h2 class="h2"><span class="nb">私たちが大切にしているのは、</span><br><span class="nb m">「量より質」に</span><span class="nb m">時間をかけること。</span></h2>
+    <p class="lead" style="text-align: left">Eコマースの売上は、質の低い量に時間・コストをかけるより、質を高くする事に時間・コストをかける方が、効率性は5倍向上し、ROIは高くなる。私たちはそう考えています。定性的な量をひたすらこなすのではなく、科学的に、ECで売れる法則に従ったアクションを積み重ねます。</p>
+    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 460px; margin: 32px auto 0"><a class="btn p" href="#form"><span>まずは無料で相談してみる</span><span aria-hidden="true">↗</span></a><a class="btn o" href="#form"><span>サービス資料を請求する</span><span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<!-- EXECUTION -->
+<section style="background: #FFFFFF">
+  <div class="wrap">
+    <p class="lb">EXECUTION</p>
+    <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; color: #0B5BD3"><span class="nb">貴社の課題に合わせて</span><span class="nb">“効かせる”打ち手を提案・実行</span></p>
+    <h2 class="h2"><span class="nb">売上・利益に直結する</span><span class="nb">5つのカテゴリ</span></h2>
+    <p class="lead">「どこから改善すればいいか分からない」というお悩みに応えるため、5つのカテゴリを軸に、課題に応じた施策を提案・実行します。</p>
+    <p style="margin: 20px 0 0; font-size: 13px; color: #4B5B70; white-space: nowrap">← 横にスライドできます →</p>
+    <div tabindex="0" role="region" aria-label="5つの施策カテゴリ" style="display: flex; gap: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; padding: 4px 18px 16px; margin: 8px -18px 0">
+      <sc-for list="{{execs}}" as="ex" hint-placeholder-count="5">
+        <div style="flex: 0 0 min(78%, 300px); scroll-snap-align: start; border: 1px solid #0B1B33; box-sizing: border-box">
+          <p style="margin: 0; background: #0B1B33; color: #FFFFFF; font-weight: 900; font-size: 16px; text-align: center; padding: 14px 10px"><span class="no d" style="display: block; font-size: 10px">{{ex.no}} / {{ex.en}}</span>{{ex.title}}</p>
+          <ul style="list-style: none; margin: 0; padding: 22px 16px; display: flex; flex-direction: column; gap: 12px; text-align: center; font-weight: 700; font-size: 15px"><sc-for list="{{ex.items}}" as="it" hint-placeholder-count="3"><li style="padding-bottom: 12px; border-bottom: 1px solid #D5DEE9">{{it}}</li></sc-for></ul>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: 40px auto 0; max-width: 620px; text-align: center; font-weight: 900; font-size: clamp(18px, 4.8vw, 24px); line-height: 2"><span class="nb">課題を提示して</span><span class="nb">終わりにはしません。</span><br><span class="nb">「どうすればいいか」まで考え、</span><br><span class="nb m">実行まで伴走する</span><span class="nb">ことが</span><br><span class="nb">NAVYの支援です。</span></p>
+  </div>
+</section>
+
+<!-- Worries -->
+<section style="background: #071A33; color: #FFFFFF">
+  <div class="wrap">
+    <p class="lb d">NEXT ACTIONS</p>
+    <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; color: #5CC8F0"><span class="nb">「わかっているのに、進まない」</span><span class="nb">その一歩を、共に。</span></p>
+    <h2 class="h2"><span class="nb">現場は「やらない」のではなく、</span><span class="nb">「やれない」。</span></h2>
+    <p class="lead d">現場は日々の業務に追われ、経営は次の打ち手を求めている。そこには、リソースの限界や専門性の不足といった“実行の壁”があります。</p>
+    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 14px">
+      <sc-for list="{{worries}}" as="w" hint-placeholder-count="3">
+        <div class="dcard"><p class="no d" style="margin: 0 0 14px">{{w.n}}</p><p style="margin: 0; font-weight: 900; font-size: clamp(18px, 4.8vw, 22px); line-height: 1.6"><sc-for list="{{w.t}}" as="x" hint-placeholder-count="2"><span class="nb">{{x}}</span></sc-for></p></div>
+      </sc-for>
+    </div>
+    <img src="/_blob/36a9bd42e36b68b6d8def35de73f78f5" alt="ノートPCの前で頭を抱えるビジネスパーソン" style="margin-top: 14px; width: 100%; max-height: 300px; aspect-ratio: 16 / 9; object-fit: cover; display: block">
+    <p class="lead d" style="margin-top: 24px"><span class="nb">支援を受けていても、</span><span class="nb">利益も次の一手も見えてこない。</span><span class="nb">売上の数字だけを追い続けていませんか。</span></p>
+  </div>
+</section>
+<section style="background: #F1F5F9">
+  <div class="wrap" style="text-align: center">
+    <p class="lb" style="justify-content: center">OUR ANSWER</p>
+    <p style="margin: 0 0 20px; font-weight: 700; font-size: 17px; line-height: 1.9"><span class="nb">NAVYは、委託費まで含めた</span><span class="nb">営業利益軸でご提案します。</span></p>
+    <p style="margin: 0; font-weight: 900; font-size: clamp(26px, 7vw, 46px); line-height: 1.6"><span class="nb m">売上は伸びたのに</span><br><span class="nb m">費用倒れ</span><span class="nb" style="font-size: 0.7em">、を</span><br><span class="nb m">起こさない設計です。</span></p>
+  </div>
+</section>
+
+<!-- DIFFERENCE -->
+<section style="background: #F1F5F9">
+  <div class="wrap">
+    <p class="lb">OUR DIFFERENCE</p>
+    <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; color: #0B5BD3"><span class="nb">NAVYのEC支援は</span><span class="nb">ここが違う</span></p>
+    <h2 class="h2"><span class="nb">どんな悩みに、</span><span class="nb">どう向き合うのか</span></h2>
+    <p class="lead">課題が言語化できていない「なんとなく困っている」状態からでも、一緒に整理して動かしていきます。</p>
+    <p style="margin: 20px 0 0; font-size: 13px; color: #4B5B70; white-space: nowrap">← 横にスライドできます →</p>
+    <div tabindex="0" role="region" aria-label="お悩み別の対応例" style="display: flex; gap: 14px; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; padding: 4px 18px 16px; margin: 8px -18px 0">
+      <sc-for list="{{diffs}}" as="df" hint-placeholder-count="4">
+        <div class="card" style="flex: 0 0 min(82%, 330px); scroll-snap-align: start; padding: 0; display: flex; flex-direction: column">
+          <div style="padding: 24px 20px 20px; text-align: center"><p class="en" style="margin: 0">CASE</p><p style="margin: 0 0 10px; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 34px; line-height: 1; color: #0B5BD3">{{df.no}}</p><h3 style="margin: 0 0 12px; font-weight: 900; font-size: 20px; line-height: 1.5"><sc-for list="{{df.t}}" as="w" hint-placeholder-count="2"><span class="nb">{{w}}</span></sc-for></h3><p style="margin: 0; font-size: 13.5px; color: #4B5B70; line-height: 1.8">{{df.worry}}</p></div>
+          <div aria-hidden="true" style="align-self: center; width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 14px solid #0B5BD3"></div>
+          <div style="margin-top: 14px; background: #0B1B33; color: #FFFFFF; padding: 20px; font-weight: 700; font-size: 14.5px; line-height: 1.9; flex: 1">{{df.answer}}</div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: 44px 0 0; text-align: center; font-weight: 900; font-size: clamp(20px, 5.4vw, 28px); line-height: 1.8"><span class="nb">まずは、</span><br><span class="nb m">“手をつけられていないこと”を</span><br><span class="nb">言葉にするところから。</span></p>
+    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 460px; margin: 32px auto 0"><a class="btn p" href="#form"><span>まずは無料で相談してみる</span><span aria-hidden="true">↗</span></a><a class="btn o" href="#form"><span>サービス資料を請求する</span><span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section style="background: #FFFFFF">
+  <div class="wrap">
+    <p class="lb">CASE STUDY</p>
+    <h2 class="h2"><span class="nb">導入事例・</span><span class="nb">お客様の声</span></h2>
+    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px">
+      <sc-for list="{{voices}}" as="v" hint-placeholder-count="3">
+        <figure class="card" style="margin: 0; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 10px"><span class="no">{{v.n}}</span><span class="en" style="font-family: 'Noto Sans JP', sans-serif; letter-spacing: 0.04em; text-align: right">{{v.tag}}</span></div>
+          <h3 style="margin: 0; font-weight: 900; font-size: 20px; line-height: 1.55"><sc-for list="{{v.t}}" as="w" hint-placeholder-count="2"><span class="nb m">{{w}}</span></sc-for></h3>
+          <blockquote style="margin: 0; font-size: 14px; line-height: 1.95; color: #4B5B70">{{v.body}}</blockquote>
+          <figcaption style="margin-top: auto; padding-top: 14px; border-top: 1px solid #D5DEE9; display: flex; gap: 12px; align-items: center">
+            <span style="flex: none; width: 48px; height: 48px; border: 1px dashed #9AA8C4; display: flex; align-items: center; justify-content: center; font-size: 10px; color: #4B5B70">写真</span>
+            <span style="font-weight: 900; font-size: 16px">{{v.who}}</span>
+          </figcaption>
+        </figure>
+      </sc-for>
+    </div>
+    <p class="en" style="margin: 48px 0 14px">OTHER RESULTS</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0">
+      <sc-for list="{{stats}}" as="st" hint-placeholder-count="6">
+        <div class="card" style="padding: 18px 14px; margin: -1px 0 0 -1px"><div style="font-size: 12px; font-weight: 700; color: #4B5B70">{{st.who}}</div><div style="font-weight: 900; font-size: 17px; line-height: 1.5; margin-top: 6px; color: #0B5BD3"><sc-for list="{{st.t}}" as="w" hint-placeholder-count="2"><span class="nb">{{w}}</span></sc-for></div></div>
+      </sc-for>
+    </div>
+    <div style="margin-top: 40px; max-width: 460px"><a class="btn p" href="#form"><span>同じように相談してみる</span><span aria-hidden="true">↗</span></a></div>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section style="background: #FFFFFF">
+  <div class="wrap">
+    <p class="lb">SUPPORT DETAILS</p>
+    <p style="margin: 0 0 10px; font-weight: 700; font-size: 14px; color: #0B5BD3"><span class="nb">戦略から実行まで一貫支援で</span><span class="nb">成果が出る仕組みを作る</span></p>
+    <h2 class="h2"><span class="nb">「戦略だけ」「制作だけ」では</span><span class="nb">終わらせません</span></h2>
+    <p class="lead">分析・提案・実行・振り返りまでを一貫して支援し、継続的に成果を生み出す仕組みを構築します。</p>
+    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 36px 14px">
+      <sc-for list="{{details}}" as="d" hint-placeholder-count="4">
+        <div style="display: flex; flex-direction: column; gap: 14px">
+          <p style="margin: 0; background: #0B1B33; color: #FFFFFF; font-weight: 900; font-size: 15px; text-align: center; padding: 10px"><span class="no d" style="margin-right: 10px">{{d.no}}</span>{{d.step}}</p>
+          <img src="{{d.photo}}" alt="{{d.alt}}" style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; display: block">
+          <h3 style="margin: 0; font-weight: 900; font-size: 18px; line-height: 1.6">{{d.head}}</h3>
+          <p style="margin: 0; font-size: 14px; line-height: 1.95; color: #4B5B70">{{d.body}}</p>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section id="price" style="scroll-margin-top: 64px; background: #F1F5F9">
+  <div class="wrap">
+    <p class="lb">SUPPORT PLANS</p>
+    <h2 class="h2"><span class="nb">料金プラン</span></h2>
+    <p class="lead"><span class="nb">料金はショップ規模に応じて異なります。</span><span class="nb">最適なプランをご提案します。</span></p>
+    <div style="margin-top: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px">
+      <sc-for list="{{plans}}" as="pl" hint-placeholder-count="3">
+        <div class="card" style="display: flex; flex-direction: column; gap: 14px">
+          <span class="no">PLAN {{pl.n}}</span>
+          <h3 style="margin: 0; font-weight: 900; font-size: 19px; line-height: 1.5">{{pl.name}}</h3>
+          <p style="margin: 0; font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: 30px; line-height: 1.2; color: #0B5BD3; white-space: nowrap">{{pl.main}}</p>
+          <div style="border-bottom: 1px solid #D5DEE9"><sc-for list="{{pl.fees}}" as="f" hint-placeholder-count="2"><div class="row" style="padding: 10px 0">{{f}}</div></sc-for><div class="row" style="padding: 10px 0; font-weight: 500; font-size: 13px"><span>契約期間</span><span>{{pl.term}}</span></div><div class="row" style="padding: 10px 0; font-weight: 500; font-size: 13px"><span>開始目安</span><span>{{pl.start}}</span></div></div>
+          <p style="margin: 0; font-size: 13.5px; line-height: 1.9; color: #4B5B70">{{pl.desc}}</p>
+        </div>
+      </sc-for>
+    </div>
+    <p class="en" style="margin: 48px 0 14px">OPTIONS</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px">
+      <sc-for list="{{options}}" as="pl" hint-placeholder-count="2">
+        <div class="card" style="display: flex; flex-direction: column; gap: 12px">
+          <h3 style="margin: 0; font-weight: 900; font-size: 18px">{{pl.name}}</h3>
+          <p style="margin: 0; font-family: 'Inter', 'Noto Sans JP', sans-serif; font-weight: 800; font-size: 24px; line-height: 1.2; color: #0B5BD3; white-space: nowrap">{{pl.main}}</p>
+          <div style="border-bottom: 1px solid #D5DEE9"><sc-for list="{{pl.fees}}" as="f" hint-placeholder-count="2"><div class="row" style="padding: 10px 0">{{f}}</div></sc-for><div class="row" style="padding: 10px 0; font-weight: 500; font-size: 13px"><span>契約期間</span><span>{{pl.term}}</span></div></div>
+          <p style="margin: 0; font-size: 13.5px; line-height: 1.9; color: #4B5B70">{{pl.desc}}</p>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: 18px 0 0; font-size: 12.5px; color: #4B5B70">※成果報酬は、定めた月商ラインの超過分を対象に発生します。（例）月商ライン500万円・実績550万円・成果報酬10%の場合、超過分50万円の10%である5万円が対象。</p>
+
+    <p class="en" style="margin: 56px 0 8px">PLAN COMPARISON</p>
+    <h3 style="margin: 0 0 6px; font-weight: 900; font-size: clamp(20px, 5.4vw, 26px)"><span class="nb">プラン別サポート内容</span></h3>
+    <p style="margin: 0 0 16px; font-size: 13px; color: #4B5B70; white-space: nowrap">← 横にスライドできます →</p>
+    <div tabindex="0" role="region" aria-label="プラン別サポート内容の比較表" style="overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid #D5DEE9; background: #FFFFFF">
+      <table style="border-collapse: separate; border-spacing: 0; min-width: 760px; width: 100%; font-size: 14px; text-align: center">
+        <thead><tr>
+          <th scope="col" style="position: sticky; left: 0; z-index: 2; background: #071A33; color: #FFFFFF; width: 150px; min-width: 150px; padding: 18px 8px; font-weight: 700">基本項目</th>
+          <sc-for list="{{planCols}}" as="pc" hint-placeholder-count="3">
+            <th scope="col" style="background: #0E2A4D; color: #FFFFFF; min-width: 190px; padding: 18px 10px; font-weight: 900; font-size: 15px; line-height: 1.4; border-left: 1px solid #24466F"><sc-for list="{{pc.t}}" as="w" hint-placeholder-count="2"><span class="nb">{{w}}</span></sc-for></th>
+          </sc-for>
+        </tr></thead>
+        <tbody>
+          <sc-for list="{{planRows}}" as="pr" hint-placeholder-count="19">
+            <tr>
+              <th scope="row" style="position: sticky; left: 0; z-index: 1; background: #F8FAFC; padding: 14px 8px; font-weight: 700; font-size: 13px; line-height: 1.5; border-top: 1px solid #D5DEE9; border-right: 1px solid #D5DEE9">{{pr.item}}<sc-if value="{{pr.note}}" hint-placeholder-val="{{ false }}"><span style="display: block; font-size: 11px; font-weight: 500; color: #4B5B70">{{pr.note}}</span></sc-if></th>
+              <sc-for list="{{pr.cells}}" as="cell" hint-placeholder-count="3">
+                <td style="padding: 14px 8px; border-top: 1px solid #D5DEE9; border-left: 1px solid #D5DEE9; font-size: 22px; font-weight: 700; color: {{cell.color}}; line-height: 1">{{cell.mark}}</td>
+              </sc-for>
+            </tr>
+          </sc-for>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CTA2 -->
+<section style="background: #071A33; color: #FFFFFF">
+  <div class="wrap" style="max-width: 880px; text-align: center">
+    <p class="lb d" style="justify-content: center">CONSULTATION</p>
+    <h2 class="h2"><span class="nb">まずはお気軽に</span><span class="nb">ご相談を</span></h2>
+    <p class="lead d" style="text-align: left">「この課題をどうにかしたい。けど、どのプランがいいかわからない」「自社にどのプランが適しているか、一緒に考えてほしい」といったご相談も歓迎です。貴社の状況に応じて、最適な組み合わせをご提案します。</p>
+    <div style="display: flex; flex-direction: column; gap: 10px; max-width: 460px; margin: 32px auto 0"><a class="btn p" href="#form"><span>まずは無料で相談してみる</span><span aria-hidden="true">↗</span></a><a class="btn o" href="#form"><span>サービス資料を請求する</span><span aria-hidden="true">→</span></a></div>
+  </div>
+</section>
+
+<!-- QUESTION -->
+<section style="background: #F8FAFC">
+  <div class="wrap" style="max-width: 880px">
+    <p class="lb">FAQ</p>
+    <h2 class="h2"><span class="nb">ご相談前に</span><span class="nb">よくいただく質問</span></h2>
+    <div style="margin-top: 32px; border-bottom: 1px solid #D5DEE9">
+      <sc-for list="{{faqs}}" as="q" hint-placeholder-count="5">
+        <details open="{{q.open}}" style="border-top: 1px solid #D5DEE9">
+          <summary style="display: flex; gap: 16px; align-items: center; padding: 22px 0; min-height: 44px">
+            <span class="no" style="flex: none">Q{{q.n}}</span>
+            <span style="flex: 1; min-width: 0; font-weight: 700; font-size: 15px; line-height: 1.7">{{q.q}}</span>
+            <svg class="plus" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0B5BD3" stroke-width="2.6" stroke-linecap="round" aria-hidden="true" style="flex: none"><line x1="12" y1="4" x2="12" y2="20"></line><line x1="4" y1="12" x2="20" y2="12"></line></svg>
+          </summary>
+          <p style="margin: 0; padding: 0 0 24px 46px; font-size: 14.5px; line-height: 1.95; color: #4B5B70">{{q.a}}</p>
+        </details>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section id="form" style="scroll-margin-top: 64px; background: #071A33; color: #FFFFFF">
+  <div class="wrap" style="display: flex; flex-wrap: wrap; gap: 40px 56px">
+    <div style="flex: 1 1 320px; min-width: 0">
+      <p class="lb d">CONTACT</p>
+      <h2 class="h2"><span class="nb">まずは現状の課題を、</span><span class="nb">お聞かせください</span></h2>
+      <p class="lead d"><span class="nb">プランが決まっていない段階でもご相談ください。</span><span class="nb">店舗の状態を分析し、課題の抽出を無料で行います。</span></p>
+      <div style="margin-top: 28px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; max-width: 460px">
+        <div class="dcard" style="padding: 18px 14px; border: 1px solid #24466F"><p class="no d" style="margin: 0 0 6px; font-size: 10px">CONTACT</p><p style="margin: 0; font-weight: 900; font-size: 15px; line-height: 1.6">ご質問・ご相談</p></div>
+        <div class="dcard" style="padding: 18px 14px; border: 1px solid #24466F"><p class="no d" style="margin: 0 0 6px; font-size: 10px">DOWNLOAD</p><p style="margin: 0; font-weight: 900; font-size: 15px; line-height: 1.6">サービス資料請求</p></div>
+      </div>
+    </div>
+    <form style="flex: 1 1 360px; min-width: 0; background: #FFFFFF; color: #0B1B33; padding: clamp(20px, 4vw, 36px); display: flex; flex-direction: column; gap: 18px; box-sizing: border-box">
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #0B5BD3; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>会社名</span><input type="text" style="min-height: 50px; border: 1px solid #B9C6D6; border-radius: 2px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #0B5BD3; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>氏名</span><input type="text" style="min-height: 50px; border: 1px solid #B9C6D6; border-radius: 2px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #0B5BD3; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>電話番号</span><input type="tel" style="min-height: 50px; border: 1px solid #B9C6D6; border-radius: 2px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #0B5BD3; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>メールアドレス</span><input type="email" style="min-height: 50px; border: 1px solid #B9C6D6; border-radius: 2px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400"></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #0B5BD3; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">必須</span>ご希望</span><select style="min-height: 50px; border: 1px solid #B9C6D6; border-radius: 2px; padding: 0 14px; font: inherit; font-size: 16px; font-weight: 400; background: #FFFFFF"><option>無料相談</option><option>サービス資料請求</option><option>無料ECショップ診断</option></select></label>
+      <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 14px"><span><span style="background: #5C6A85; color: #FFFFFF; font-size: 11px; padding: 2px 8px; margin-right: 8px">任意</span>ご相談内容</span><textarea rows="4" style="border: 1px solid #B9C6D6; border-radius: 2px; padding: 12px 14px; font: inherit; font-size: 16px; font-weight: 400"></textarea></label>
+      <label style="display: flex; align-items: center; gap: 8px; font-size: 14px; min-height: 44px"><input type="checkbox" style="width: 18px; height: 18px; flex: none">個人情報保護方針に同意する</label>
+      <button type="button" class="btn p" style="border: 0; cursor: pointer; font-family: inherit; width: 100%"><span>送信する</span><span aria-hidden="true">↗</span></button>
+    </form>
+  </div>
+</section>
+
+<footer style="background: #06162C; color: #B8C7DB; border-top: 1px solid #1E4A78">
+  <div style="max-width: 1120px; margin: 0 auto; padding: 28px 18px; font-size: 12px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between"><span>楽天・Amazon・自社ECを、戦略から実行・改善まで。</span><span>© Navy Group, Inc.</span></div>
+</footer>
+
+<!-- Sticky bottom CTA -->
+<div style="position: sticky; bottom: 0; z-index: 9; background: rgba(7,26,51,0.97); border-top: 1px solid #1E4A78; padding: 8px 14px; display: flex; justify-content: center">
+  <a class="btn p" href="#form" style="width: 100%; max-width: 520px; min-height: 48px"><span style="display: flex; flex-direction: column; line-height: 1.3"><span style="font-size: 10.5px; font-weight: 500">EC総合支援について</span>無料で相談する</span><span aria-hidden="true">↗</span></a>
+</div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":15800}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.baseVals();
+    const n = (a) => a.map((x, i) => ({ ...x, n: String(i + 1).padStart(2, '0') }));
+    ['worries', 'voices', 'faqs', 'reasons', 'flow', 'plans'].forEach((k) => { v[k] = n(v[k]); });
+    const en = ['STRATEGY', 'OPERATION & CREATIVE', 'ADS & LOGISTICS'];
+    v.pillars = v.pillars.map((p, i) => ({ ...p, en: en[i] }));
+    v.chainShort = [['01', '分析'], ['02', '戦略'], ['03', '制作'], ['04', '広告'], ['05', '物流']].map(([no, text]) => ({ no, text }));
+    v.planRows = v.planRows.map((r) => ({ ...r, cells: r.cells.map((c) => ({ ...c, color: c.mark === '○' ? '#0B5BD3' : '#9AA3B2' })) }));
+    const P = (s) => s.split('|');
+    v.nums = [['担当分析', '4,000', '社以上'], ['担当流通高', '3,500', '億円以上'], ['広告運用実績', '30', '億円以上'], ['制作実績', '5,000', '超'], ['物流拠点', '200', 'カ所'], ['継続率', '96', '%以上']].map(([label, num, unit]) => ({ label, num, unit }));
+    v.execs = [
+      ['01', 'TRAFFIC', 'アクセス向上', ['SEO対策', '広告運用', 'SNS・アフィリエイト']],
+      ['02', 'CVR', '転換率向上', ['商品ページ編集', 'LP・バナー制作', '商品撮影']],
+      ['03', 'AOV', '客単価向上', ['企画・販促提案', '市場・競合調査', '商品開発支援']],
+      ['04', 'REPEAT', 'リピート向上', ['メルマガ配信', 'CRM戦略', '顧客データ分析']],
+      ['05', 'PROFIT', '利益管理', ['営業利益の管理ツール作成', 'コスト分析', 'コスト改善のご提案']]
+    ].map(([no, en, title, items]) => ({ no, en, title, items }));
+    v.diffs = [
+      ['01', '何から手をつけるか|分からない', '売上が上がらない。ノウハウがなく、何からすべきか整理できない。', '店舗毎に状態と課題は異なります。店舗の健康状態を分析し、課題抽出を無料で行い、適切なプランをご提案します。'],
+      ['02', '売上は伸びたのに|利益が残らない', '売上は上がっているが、どこにコストがかかっているのか見えない。', '営業利益を管理するツールを御社仕様に作成。コストを分析し、改善のご提案と、利益がでる仕組化を構築します。'],
+      ['03', '人手が足りず|運営が中途半端', '掛け持ちで運営していて、社内にECの専任を置けない。', '企画、撮影、ページ編集、SEO、広告運用、メルマガ、CRM、レポート作成まで、運営に関する全てをワンストップで代行します。'],
+      ['04', '広告の効果が|出ていない', '広告費をかけているが、成果につながっているのか判断できない。', '予算・目標設定、枠選定、入稿、分析・改善、レポートまでワンストップで支援します。']
+    ].map(([no, t, worry, answer]) => ({ no, t: P(t), worry, answer }));
+    v.details = [
+      ['01', '分析・課題発見', '/_blob/ed17072fbd97ebedf641ebed5aca3767', 'グラフを指して分析する様子', '「なぜ売れないのか」を、データから読み解く。', '独自システムで市場・競合調査を実施し、目指すべき目標数値を設定。競合分析から競合優位性を把握し、各主要KPI（UU/CVR/AOV）の観点で課題の真因を特定します。'],
+      ['02', '戦略・施策提案', '/_blob/9d4b40eafd67835d393caa8ff6cd4686', 'データが表示されたノートPC', '「どう変えるか」を、根拠をもとに提案。', '受注データを解析し、顧客の購買パターンに則したマーケティング戦略を立案。委託費を含めた営業利益軸で計算し、具体的戦略と毎月の目標、課題を決めて共有します。'],
+      ['03', '制作・実務・広告運用', '/_blob/edebeb397d484d6da72f8c52a6707471', '資料を広げて企画を詰めるチーム', '「やるべき」が見えても実行できない、を解決。', '競合優位性を落とし込んだページ・LP・バナーの制作から、商品登録、メルマガ配信、広告の入稿・運用まで対応。重要項目はすべて社内で完結させています。'],
+      ['04', '定例会議・振り返り', '/_blob/808c8b97f1e1d0d6af9faac933b5da9d', 'テーブルで打ち合わせをするチーム', '「やりっぱなし」にしない、改善の仕組み化。', '月1回の定例会議（Web会議）と随時のご相談で、実施内容と次の優先順位を共有。貴社内に仕組化を構築し、属人的要素を排除していきます。']
+    ].map(([no, step, photo, alt, head, body]) => ({ no, step, photo, alt, head, body }));
+    v.faqs = n(v.faqs.concat([
+      { open: false, q: '売れるページが作れません。', a: '楽天で1,500社以上を担当し、売れるページ構成・ポイントを熟知した監修の元、高品質で売れるページを作成いたします。' },
+      { open: false, q: 'EC事業の前に、会社組織に課題があります。経営改善の提案も可能ですか？', a: '可能です。多様な不調組織再建経験とMBA知識を活かし、売上、利益、管理体制、人材、評価、KPI設定、営業等、企業経営課題を分析、提案、フォローいたします。' },
+      { open: false, q: '相談から開始までの流れを教えてください。', a: 'ヒアリング、プランと金額のご提示、誓約書の締結、戦略と目標の共有、キックオフ会議の順に進みます。開始の目安は、ECコンサルティングで1週間後、運営代行で2週間後です。' },
+      { open: false, q: '最低契約期間はありますか？', a: 'ECコンサルティングと運営代行は1年または6ヶ月、広告運用代行は6カ月毎のご契約です。' }
+    ]));
+    return v;
+  }
+  baseVals() {
+    const P = (s) => s.split('|');
+    const B = (id) => '/_blob/' + id;
+    const W1 = B('1861a0af6b8bb4d6e14fc93b5d73d7f3'), W2 = B('7926bfcabc249a1371e77dc4b5715bd4'), W3 = B('911a05689f13ddd89ef844d93f7aeef7');
+    const worries = [
+      '売上は伸びているのに、|利益が残らない',
+      '支援会社からは|報告が中心で、|次の一手が見えない',
+      '担当者の退職・異動で|売上が落ちてしまった'
+    ].slice(0, 3).map((s, i) => ({ t: P(s), img: [W1, W2, W3][i % 3], left: i % 2 === 1, right: i % 2 === 0 }));
+    return {
+      cta: this.props.cta ?? '#C6A45C',
+      heroFacts: [
+        { pre: 'EC・デジタル担当分析', num: '4,000', post: '社以上' },
+        { pre: '担当流通高', num: '3,500', post: '億円以上' },
+        { pre: '広告運用実績', num: '30', post: '億円以上' }
+      ],
+      points: [
+        { no: '1', t: P('大手ECモール・|元メーカー店長・|通販出身の|プロが担当') },
+        { no: '2', t: P('独自システムによる|科学的で緻密な|分析戦略') },
+        { no: '3', t: P('戦略・制作・|広告・物流まで|ワンストップ') }
+      ],
+      channels: ['楽天', 'Amazon', 'Yahoo!ショッピング', 'au PAYマーケット', 'Qoo10', '自社サイト(D2C)'],
+      targets: [
+        { no: '1', title: '規模不問', t: P('中小〜上場企業|幅広くサポート') },
+        { no: '2', title: '業種不問', t: P('全業種経験から|商材問わずサポート') },
+        { no: '3', title: 'チャネル不問', t: P('ECモールは勿論、|全チャネル対応') }
+      ],
+      worries,
+      reasons: [
+        { no: '1', img: B('460d4212f45ad9dc4492bb5488d730f1'), photo: '/_blob/908fabbdb81a24716b17b0d117a9c54b', ph: '握手を求めるスーツ姿の男性', t: P('営業利益軸で提案し、|仕組化まで支援'), body: '委託費を含めた営業利益軸で計算してご提案。さらに貴社内に仕組化を構築していくため、属人的要素を懸念する必要もありません。' },
+        { no: '2', img: B('81cb595bdbf24745f4798ab8b69020fc'), photo: '/_blob/ed17072fbd97ebedf641ebed5aca3767', ph: 'グラフを指して分析する様子', t: P('累計4,000社以上の|担当分析経験'), body: '日本最大手ECモールでの豊富な担当分析経験から、業種・商品ごとの相対的な感覚値を保有。正値でクライアントの良しあしを分析でき、全業種・全業態に対応可能です。' },
+        { no: '3', img: B('04f8d01cc66d6978d4cb0ab1c65ff99a'), photo: '/_blob/9d4b40eafd67835d393caa8ff6cd4686', ph: 'データが表示されたノートPC', t: P('独自システムによる|データドリブン戦略'), body: '豊富な自社システム・ツールで市場・競合データを収集し、顧客データに基づいた戦略を立案。定量データに基づく提案に徹しています。' },
+        { no: '4', img: B('763d8fba183a72c81b8c0d6bab3f4d00'), photo: '/_blob/808c8b97f1e1d0d6af9faac933b5da9d', ph: 'テーブルで打ち合わせをするチーム', t: P('重要項目は|すべて社内で完結'), body: '一部実務サポートを除き、外部に投げることは一切しません。数よりも質で勝負し、クオリティを担保しています。' }
+      ],
+      services: [
+        { img: B('3d52a8ca0cbb08b2ccbb0c2d16cd83b1'), t: P('EC運営代行'), body: '4,000社のデータベースを駆使した分析戦略、制作、実務、広告運用をワンストップで支援。' },
+        { img: B('8b9ce69f43638438c8d9fc7f9b24cffd'), t: P('戦略コンサル'), body: 'AI Agentを搭載した独自システムNAMSを活用し、調査・分析・仮説思考・戦略施策立案を行います。' },
+        { img: B('b0bdef4c67f1520609775fb32e53d04f'), t: P('広告運用'), body: 'ROI・ROAS・CPOを最大化する総合支援。約3ヶ月で効果が実感できます。継続率96%以上。' },
+        { img: B('d33644eead2ce09a8fee8a1e74f5c56f'), t: P('撮影・制作・|SNS運用'), body: '制作実績は5,000超。撮影からサイト構築、LP制作、バナー、コンテンツ開発、SNS運用まで。' },
+        { img: B('9141f7cd9ee1a0d8f1a5dc36a77cf2db'), t: P('物流支援'), body: '全国200カ所の物流拠点を提供。導入からディレクションまで対応します。' },
+        { img: B('7c633ac7788d36b7fbbac30e437ed91b'), t: P('受注・|CS対応'), body: '自社サイト、ECモール問わず、ISMSに則った情報セキュリティ管理を徹底したバックオフィス支援。' }
+      ],
+      pillars: [
+        { photo: '/_blob/fa7bb5532a97153d790d7e2901bbf5a0', ph: '資料を見せながら説明する様子', no: '01', bars: ['売れる戦略を、', 'データで描く'], img: B('99e1c33317a95b1090ef9097f2af25a9'), t: P('戦略コンサル'), body: 'AI Agentを搭載した独自システムNAMSを活用し、EC・マーケティング・デジタルのあらゆる領域で調査、分析、仮説思考、戦略施策立案を行います。4,000社のデータベースと大手ECモール出身者の感覚値をもとに、勝算の高い戦略をご提案します。', chips: ['市場・競合分析', '戦略・施策策定', '目標・KPI設計', '利益管理'] },
+        { photo: '/_blob/edebeb397d484d6da72f8c52a6707471', ph: '資料を広げて企画を詰めるチーム', no: '02', bars: ['実務も制作も、', '丸ごと任せる'], img: B('47180583c4c3c0f0f195cd6b26af180d'), t: P('EC運営代行・|SNS運用・|撮影制作'), body: '分析戦略、制作、実務、広告運用をワンストップで支援します。撮影からサイト構築、LP制作、バナー、コンテンツ開発、SNS運用まで、制作実績5,000超のチームが対応。社内に人を置けない企業様も丸ごとお任せいただけます。', chips: ['商品ページ編集', 'LP・バナー制作', '撮影', 'メルマガ配信', 'SNS運用'] },
+        { photo: '/_blob/35aa995ef31777dee447d540a78f2317', ph: '物流倉庫で荷物を運ぶスタッフ', no: '03', bars: ['集客から配送まで、', '止めない'], img: B('0439851b1023787ee5fc59af06661b1f'), t: P('広告運用・|物流支援'), body: 'ROI・ROAS・CPOを最大化する広告運用（継続率96%以上）に加え、全国200カ所の物流拠点、ISMSに則った受注・CS対応までご提供します。売上を支える裏側もまとめてお任せいただけます。', chips: ['広告運用', '物流支援', '受注処理', 'CS対応'] }
+      ],
+      chain: [
+        { no: '01', text: '市場・競合分析' },
+        { no: '02', text: '戦略・目標設計' },
+        { no: '03', text: '制作・ページ改善' },
+        { no: '04', text: '広告運用・CRM' },
+        { no: '05', text: '物流・受注CS' }
+      ],
+      phases: [
+        { range: '月商1,000万円以下', body: 'ECでどのように売上拡大をすればよいか、ECノウハウを徹底伝授。' },
+        { range: '月商1,000万〜3,000万円', body: '新規顧客の継続的獲得戦略とリピート（CRM）対策で、月商1億円突破に向けた基盤を構築。' },
+        { range: '月商3,000万〜1億円', body: '経営軸、商品軸、人材軸、物流軸など、企業毎の課題に対するソリューションを提案。' },
+        { range: '月商1億円以上', body: 'メディアプランニング、ブランディング、新商品開発サポートで重要経営指標の課題を解決。' }
+      ],
+      clients: ['キヤノン|マーケティング|ジャパン 様', 'フジッコ 様', 'ロート製薬グループ|ジェヌインR&D 様', 'Lipton 様', '道南平塚食品 様', 'スタイリッシュ|H&A 様', 'プリベント|メディカル 様'].map(P),
+      awards: [
+        { head: 'EC支援年間大賞 受賞実績', body: '楽天ショップオブザイヤー2021/2022、ヤフーベストストアアワード2021/2022、auベストショップアワード2021/2022' },
+        { head: '大手ECモール受賞実績', body: '楽天賞MVP含む3回、部門賞MIP14回' },
+        { head: 'Amazon パートナー', body: '[バッジ画像を配置：Amazon Ads Verified Partner ほか]' }
+      ],
+      cases: [
+        { no: '01', t: P('6カ月で|月商50万円→|1,500万円'), who: '健康食品商材', issue: '売上が50万円から上がらない。', action: '独自システムで市場・競合調査を実施し目標数値を設定。競合優位性を落とし込んだ「売れるデザイン制作」と、受注データ解析に基づくマーケティング戦略を実行。', result: '月商50万→月商1,500万（30倍以上伸長）まで6カ月で成長' },
+        { no: '02', t: P('1か月1チャネルで|単品売上|5,000万円'), who: 'ヘアケア商品（新商品）', issue: '新商品開発したヘアケア商品で市場シェア1位を獲得したい。', action: '商品販売戦略、ECマーケティングのプランニングを実施。メディアレップとなり媒体選定調整とクリエイティブ作成・配信を実施。', result: '1か月1チャネルで単品売上5,000万円を達成。その後5カ月で利益回収' },
+        { no: '03', t: P('7カ月で|月商1,000万円を|突破'), who: '卸メインの企業', issue: '卸をメインに事業展開してきたため、B2C/ECのノウハウがない。', action: '各主要KPI（UU/CVR/AOV）観点で年間売上戦略とノウハウを伝授し、自社で回る仕組化を構築。', result: '広告出稿金額を業界平均の1/3まで抑え、営業利益率20%以上で着地' }
+      ],
+      miniCases: [
+        { who: 'インナー・下着企業様', t: P('7カ月で|月商6,000万→|1億円') },
+        { who: '自動車パーツ企業様', t: P('7カ月で|200万→|800万') },
+        { who: '日用品・インテリア用品企業様', t: P('6カ月で|月商150万→|1,800万') }
+      ],
+      voices: [
+        { t: P('EC支援会社の切替で|売上130%改善を|1カ月後に達成'), body: '別のEC支援会社さんでEC運営代行をお願いしていましたが、スピードが遅く何をしているか不透明な部分が多く不安が続きました。分析・戦略が強いネイビーさんに切り替え、1カ月後から早速売上改善効果が出て130%以上の伸長ができました。', who: '道南平塚食品 様', tag: '食品 / EC運営代行' },
+        { t: P('丁寧で密な|コミュニケーションと|利益追求意識に|プロを感じた'), body: '10社程から選定しました。“非常に丁寧で密なコミュニケーション”と、費用を最大限抑えた形で売上拡大ができる点が素晴らしいです。非常に細かく具体的な提案と実際の実行をいただいています。', who: 'フジッコ 様', tag: '食品 / EC運営代行' },
+        { t: P('退社による売上減少から|楽天運営代行により|急回復'), body: '急な退職により売上が減少しており困っている中、10社程のEC支援会社の中から最終選定。決め手は「圧倒的な分析粒度の高さ」「定量且つ具体的提案」でした。最終的にはAmazonや自社含めお任せしています。', who: 'スタイリッシュH&A 様', tag: '楽天・Amazon・自社EC / 運営代行' }
+      ],
+      compare: [
+        { item: '戦略提案', a: 'データに基づいた定量的・科学的な戦略提案', b: '定性的な仮説提案' },
+        { item: '支援内容', a: '真因を特定し、解決策の提案から実行まで', b: '課題を毎月提示し、売上状況を報告するだけ' },
+        { item: '体制', a: '重要項目はすべて社内で完結', b: '根幹の戦略を外部・アルバイトに丸投げ' },
+        { item: '判断基準', a: '大手モール出身者の相対的な感覚値で正値を判断', b: '自社の担当企業の数値しか見られない' },
+        { item: '提案の軸', a: '委託費を含めた営業利益軸', b: '売上は伸びても費用倒れになることも' },
+        { item: '仕組化', a: '貴社内に仕組化を構築し、属人性を排除', b: '属人的になりやすい' }
+      ],
+      plans: [
+        { name: 'コンサルティングプラン', main: '月額10万円〜', fees: ['初期費用5万円', '成果報酬10%'], term: '1年/6ヶ月', start: '1週間後', desc: '実務作業はお客様で対応。分析・戦略施策立案・施策実行サポートに特化してKPI達成をサポート。' },
+        { name: 'コンサル＋制作・一部運用プラン', main: '[料金を記入]', fees: ['[初期費用を記入]', '[成果報酬を記入]'], term: '[要確認]', start: '[要確認]', desc: 'コンサルティングに加えて、LP・バナー・商品画像の制作、メルマガ配信、商品ページ編集まで対応。' },
+        { name: '運営代行プラン', main: '月額15万円〜', fees: ['初期費用10万円', '成果報酬10%'], term: '1年/6ヶ月', start: '2週間後', desc: 'コンサル＋制作＋実務作業を含めたプラン。包括的支援でスピード感をもった支援が可能。' }
+      ],
+      options: [
+        { name: '広告運用代行', main: '運用手数料15%', fees: ['初期費用10万円', '月額固定費0円', 'ECモール外は手数料20%'], term: '6カ月毎', start: '3日後', desc: '予実管理、分析、チューニング、レポート、貴社専用ツール作成まで完全運用代行。' },
+        { name: '高品質LP制作', main: '目安20万円〜', fees: ['PC/SP完全オリジナルデザイン'], term: '納品まで', start: '即日', desc: 'デザインコンサル、構成代行、ワイヤーフレーム作成、デザイン制作、コーディングと一気通貫で対応。' }
+      ],
+      stats: [
+        ['健康食品', '6カ月で|月商50万→|1,500万'], ['ヘアケア（新商品）', '1か月で|単品売上|5,000万円'], ['卸メインの企業', '7カ月で|月商1,000万円|突破'],
+        ['インナー・下着', '7カ月で|月商6,000万→|1億円'], ['自動車パーツ', '7カ月で|200万→|800万'], ['日用品・インテリア', '6カ月で|月商150万→|1,800万']
+      ].map(([who, s]) => ({ who, t: P(s) })),
+      planCols: [
+        { t: P('コンサルティング|プラン'), bg: '#003C92' },
+        { t: P('コンサル＋制作・|一部運用プラン'), bg: '#D0271D' },
+        { t: P('運営代行|プラン'), bg: '#1F6FEB' }
+      ],
+      planRows: [
+        ['戦略・施策策定', '', 7], ['分析、解析、ツール作成', '', 7], ['アクセス向上改善サポート', '', 7], ['転換率向上改善サポート', '', 7], ['客単価向上改善サポート', '', 7], ['リピート向上改善サポート', '', 7],
+        ['広告運用', '選定、制作、入稿、審査、効果測定、報告', 7], ['モール担当者との斡旋', '', 7], ['最新情報のご提供', '', 7], ['随時ご相談', '', 7], ['定例会議月1回', 'Web会議にて', 7],
+        ['新商品・特集ページ(LP)制作', '', 3], ['バナー制作', '', 3], ['商品画像制作', '', 3], ['メルマガ配信', '', 3], ['商品ページ編集', '', 3],
+        ['受注代行・対応', '※オプションあり', 1], ['カスタマー対応', '※オプションあり', 1], ['物流対応', '※提携企業をご紹介', 1]
+      ].map(([item, note, bits]) => ({ item, note, cells: [4, 2, 1].map((b, i) => (bits & b) ? { mark: '○', color: ['#003C92', '#D0271D', '#1F6FEB'][i], bg: i === 0 ? '#F9F6EC' : '#FFFFFF' } : { mark: '－', color: '#9AA3B2', bg: i === 0 ? '#F9F6EC' : '#FFFFFF' }) })),
+      flow: [
+        { no: '01', text: 'ご依頼内容、課題、想いなどをヒアリング' },
+        { no: '02', text: '貴社に則したプランと金額をご提示' },
+        { no: '03', text: '誓約書締結。サポート開始日より詳細分析開始' },
+        { no: '04', text: '具体的戦略と毎月の目標設定、課題を決めて共有' },
+        { no: '05', text: 'キックオフ会議を開きフォローをスタート' }
+      ],
+      faqs: [
+        { open: true, q: '売上が上がらない、何からすべきですか？ノウハウがないです。', a: '人と同様に店舗毎に状態・課題は全く異なります。店舗の健康状態を分析し、御社の課題抽出を無料で行い、適切なプランをご提案します。' },
+        { open: true, q: '社内は人手不足でECに人を置けません。丸ごとお任せすることは可能でしょうか。', a: 'ネットショップ運営に関する全てをワンストップで代行可能です。企画、商品撮影、市場・競合調査、戦略・目標設計、利益管理、ページ編集、バナー作成、SEO、SNS、広告運用、メルマガ、CRM戦略、レポート作成等が可能です。' },
+        { open: false, q: '予算の兼合いで一部分だけお任せする事も可能でしょうか？', a: '可能です。但し複数の要素が混ざり合い初めて一つの売上の塊ができるので、パッケージでの契約をお勧めいたします。' },
+        { open: false, q: '売上は上がってるのですが利益が出ないです…', a: '営業利益を管理するツールを御社仕様に作成し、運用が可能です。どこにコストがかかっているのか分析を行い、コスト改善のご提案、利益がでる仕組化を構築していきます。' },
+        { open: false, q: '委託しても属人的過ぎないか不安です。', a: '仕組化を図り属人性要素を最大限排除していきます。結果的に雇用よりもコストを抑え、パートナーとして歩む事が可能です。' },
+        { open: false, q: '広告効果が出ません。運用をお願いできますか？', a: '可能です。予算・目標設定、枠選定、入稿、分析・改善、レポート等ワンストップで支援します。' }
+      ],
+      topics: ['ECショップ診断', 'EC立上げ', 'ECコンサル', 'EC運営代行', '広告運用', 'デザイン制作', 'SNS運用', 'AIO/SEO', '開発', '物流支援', '他']
+    };
+  }
+}
+</script>
+</body>
+</html>
